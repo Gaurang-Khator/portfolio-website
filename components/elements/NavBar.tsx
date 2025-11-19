@@ -14,7 +14,7 @@ import Link from "next/link";
 
 const NavBar =() => {
     return (
-        <div className="p-2 m-2 border-2 rounded-xl bg-gray-600 flex items-center justify-center    ">
+        <div className="p-2 m-2 border-2 rounded-xl bg-gray-600 flex items-center justify-center">
         <NavigationMenu>
             <NavigationMenuList className="gap-2">
                 <NavigationMenuItem >
