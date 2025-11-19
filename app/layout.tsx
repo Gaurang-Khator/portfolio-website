@@ -30,7 +30,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <div className="flex min-h-screen bg-zinc-900 text-white">
-          <aside className="w-[330px] p-6 bg-zinc-800 flex-shrink-0 h-screen sticky top-0">
+          <aside className="w-[460px] p-6 bg-zinc-900 flex-shrink-0 h-screen sticky top-0">
             <HeroSection />
           </aside>
           <main className="flex-1 flex flex-col px-10 py-8">

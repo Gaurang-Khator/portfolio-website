@@ -1,7 +1,10 @@
+import { Card } from "@/components/ui/card";
 
 const About = () => {
     return (
-        <div>About Page</div>
+        <Card>
+            About page
+        </Card>
     );
 };
 
