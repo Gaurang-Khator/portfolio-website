@@ -8,7 +8,7 @@ const HeroSection = () => {
             <Card className="bg-zinc-800 min-h-150 w-[350px] ml-16 mt-4 border-1 border-zinc-700 rounded-xl shadow-lg">
                 <CardContent> 
                     <img 
-                        src="https://avatar.githubusercontent.com/u/114048615?v=4" 
+                        src="" 
                         alt="Gaurang Profile Pic" 
                         className="rounded-xl border-4 border-blue-400 w-35 h-40 object-cover mx-auto"
                     />
@@ -26,7 +26,7 @@ const HeroSection = () => {
                         </aside>
                         <main className="flex flex-col">
                             <h1 className="text-xs font-bold text-white">EMAIL</h1>
-                            <p className="text-gray-400 text-md" ><a href="mailto:gaurangkhator.work@gmail.com">gaurangkhator.work@gmail.com</a></p>
+                            <p className="text-gray-400 text-md hover:text-blue-200" ><a href="mailto:gaurangkhator.work@gmail.com">gaurangkhator.work@gmail.com</a></p>
                         </main>
                     </div>
                     <Separator className="my-4 h-px bg-gray-600" />
