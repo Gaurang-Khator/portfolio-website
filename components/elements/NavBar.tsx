@@ -17,9 +17,9 @@ const NavBar =() => {
         <div className="p-2 m-2 border-2 rounded-xl bg-zinc-800 flex items-center justify-center border-none">
         <NavigationMenu>
             <NavigationMenuList className="flex justify-center space-x-8">
-                <NavigationMenuItem >
+                <NavigationMenuItem>
                     <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
-                        <Link href="/about" className="bg-transparent text-gray-300">About</Link>
+                        <Link href="/about" className="bg-transparent text-gray-300 hover:text-blue-400">About</Link>
                     </NavigationMenuLink>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
