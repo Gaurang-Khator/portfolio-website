@@ -47,6 +47,11 @@ const NavBar =() => {
                         <Link href="/education" className="bg-transparent text-gray-300">Education</Link>
                     </NavigationMenuLink>
                 </NavigationMenuItem>
+                <NavigationMenuItem>
+                    <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
+                        <Link href="/resume" className="bg-transparent text-gray-300">Resume</Link>
+                    </NavigationMenuLink>
+                </NavigationMenuItem>
             </NavigationMenuList>
         </NavigationMenu>
         </div>
