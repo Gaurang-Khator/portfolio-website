@@ -120,3 +120,28 @@
     @apply bg-background text-foreground;
   }
 }
+
+@layer utilities {
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 8px; 
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: #3f3f46;
+    border-radius: 1rem;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background: #3b82f6;
+    border-radius: 1rem;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #2563eb;
+  }
+
+  .custom-scrollbar {
+    scrollbar-width: thin;
+    scrollbar-color: #3b82f6 #3f3f46;
+  }
+}

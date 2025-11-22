@@ -5,7 +5,7 @@ import { Facebook, Github, Instagram, LinkedinIcon, Mail, Twitter } from "lucide
 const HeroSection = () => {
     return (
         <div>
-            <Card className="bg-zinc-800 min-h-150 w-[350px] ml-16 mt-4 border-1 border-zinc-700 rounded-xl shadow-lg">
+            <Card className="bg-zinc-800 min-h-150 w-[350px] ml-16 mt-4 border-zinc-700 rounded-xl shadow-lg">
                 <CardContent> 
                     <img 
                         src="null"
