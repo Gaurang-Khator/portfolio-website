@@ -1,6 +1,6 @@
 import { Separator } from "@radix-ui/react-separator";
 import { Card, CardContent, CardDescription } from "../ui/card";
-import { Facebook, Github, Instagram, LinkedinIcon, Mail, Twitter } from "lucide-react";
+import { Facebook, Instagram, LinkedinIcon, Mail, Twitter } from "lucide-react";
 
 const HeroSection = () => {
     return (
@@ -31,7 +31,7 @@ const HeroSection = () => {
                     </div>
                     <Separator className="my-4 h-px bg-gray-600" />
                     <h1 className="text-sm font-bold text-center mt-4 text-white">CONNECT</h1>
-                    <div className="flex justify-center gap-2 pt-2">
+                    <div className="flex justify-center gap-3 pt-3">
                         <div className="p-2 bg-gray-600 rounded-lg flex justify-center align-items-center">
                             <a href="https://www.linkedin.com/in/gaurang2201/" target="_blank">
                                 <LinkedinIcon className="text-gray-400 hover:text-blue-400"/> 
@@ -55,20 +55,20 @@ const HeroSection = () => {
                     </div>   
                     <Separator className="my-4 h-px bg-gray-600" />
                     <h1 className="text-sm font-bold text-center mt-4 text-white">CODING PROFILES</h1>
-                    <div className="flex justify-center gap-2 pt-2">   
-                        <div className="p-2 bg-gray-600 rounded-lg flex justify-center align-items-center">
+                    <div className="flex justify-center gap-3 pt-3 ">   
+                        <div className="p-2 bg-gray-600 rounded-lg flex justify-center align-items-center ">
                             <a href="https://www.github.com/Gaurang-Khator" target="_blank">
-                                <Github className="text-gray-400 hover:text-blue-400"/> 
+                                <img src="/icons8-github-24.png" alt="" />
                             </a>
                         </div>
-                        <div className="p-2 bg-gray-600 rounded-lg flex justify-center align-items-center">
+                        <div className="p-2 bg-gray-600 rounded-lg flex justify-center align-items-center ">
                             <a href="https://leetcode.com/u/gaurang_khator/" target="_blank">
-                                <Twitter className="text-gray-400 hover:text-blue-400"/> 
+                                <img src="/icons8-leetcode-24.png" alt="" />
                             </a>
                         </div>    
-                        <div className="p-2 bg-gray-600 rounded-lg flex justify-center align-items-center">
+                        <div className="p-2 bg-gray-600 rounded-lg flex justify-center align-items-center hover:border-2 hover:border-blue-400">
                             <a href="https://codeforces.com/profile/gaurang_khator" target="_blank">
-                                <Facebook className="text-gray-400 hover:text-blue-400"/> 
+                                <img src="/icons8-codeforces-24.png" alt="" />
                             </a>
                         </div>            
                     </div> 
