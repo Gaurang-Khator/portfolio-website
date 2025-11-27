@@ -8,7 +8,7 @@ const HeroSection = () => {
             <Card className="bg-zinc-800 min-h-150 w-[350px] ml-16 mt-4 border-zinc-700 rounded-xl shadow-lg">
                 <CardContent> 
                     <img 
-                        src="null"
+                        src="/favicon.png"
                         alt="Gaurang Profile Pic" 
                         className="rounded-xl border-4 border-blue-400 w-35 h-40 object-cover mx-auto"
                     />
