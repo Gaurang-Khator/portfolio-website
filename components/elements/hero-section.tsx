@@ -26,7 +26,7 @@ const HeroSection = () => {
                         </aside>
                         <main className="flex flex-col">
                             <h1 className="text-xs font-bold text-white">EMAIL</h1>
-                            <p className="text-gray-400 text-md hover:text-blue-200" ><a href="mailto:gaurangkhator.work@gmail.com">gaurangkhator.work@gmail.com</a></p>
+                            <p className="text-gray-400 text-md hover:text-blue-300" ><a href="mailto:gaurangkhator.work@gmail.com">gaurangkhator.work@gmail.com</a></p>
                         </main>
                     </div>
                     <Separator className="my-4 h-px bg-gray-600" />
@@ -56,19 +56,19 @@ const HeroSection = () => {
                     <Separator className="my-4 h-px bg-gray-600" />
                     <h1 className="text-sm font-bold text-center mt-4 text-white">CODING PROFILES</h1>
                     <div className="flex justify-center gap-3 pt-3 ">   
-                        <div className="p-2 bg-gray-600 rounded-lg flex justify-center align-items-center ">
+                        <div className="p-2 bg-gray-600 rounded-lg flex justify-center align-items-center hover:bg-blue-200">
                             <a href="https://www.github.com/Gaurang-Khator" target="_blank">
-                                <img src="/icons8-github-24.png" alt="" />
+                                <img src="/icons8-github-24.png" alt="GitHub" />
                             </a>
                         </div>
-                        <div className="p-2 bg-gray-600 rounded-lg flex justify-center align-items-center ">
+                        <div className="p-2 bg-gray-600 rounded-lg flex justify-center align-items-center hover:bg-blue-200">
                             <a href="https://leetcode.com/u/gaurang_khator/" target="_blank">
-                                <img src="/icons8-leetcode-24.png" alt="" />
+                                <img src="/icons8-leetcode-24.png" alt="LeetCode" />
                             </a>
                         </div>    
-                        <div className="p-2 bg-gray-600 rounded-lg flex justify-center align-items-center hover:border-2 hover:border-blue-400">
+                        <div className="p-2 bg-gray-600 rounded-lg flex justify-center align-items-center hover:bg-blue-200">
                             <a href="https://codeforces.com/profile/gaurang_khator" target="_blank">
-                                <img src="/icons8-codeforces-24.png" alt="" />
+                                <img src="/icons8-codeforces-24.png" alt="Codeforces" />
                             </a>
                         </div>            
                     </div> 
