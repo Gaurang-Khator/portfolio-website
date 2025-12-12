@@ -22,22 +22,22 @@ const Education = () => {
         },
         {
             degree: "Senior Secondary (12th Grade)",
-            institution: "Delhi Public School, Ahmedabad",
-            duration: "2020 - 2022",
+            institution: "Zydus School for Excellence, Ahmedabad",
+            duration: "2021 - 2022",
             details: [
-                "Percentage: 94%",
-                "Subjects: Physics, Chemistry, Mathematics, Computer Science",
-                "Founder of school's coding club"
+                "Percentage: 86.4%",
+                "Board: CBSE",
+                "Subjects: Physics, Chemistry, Mathematics, Computer Science"
             ]
         },
         {
             degree: "Secondary (10th Grade)",
-            institution: "Delhi Public School, Ahmedabad",
-            duration: "2018 - 2020",
+            institution: "Seven Oaks School, Dehradun",
+            duration: "2019 - 2020",
             details: [
-                "CGPA: 9.8/10",
-                "Active in Science and Technology activities",
-                "Winner of School Science Fair"
+                "Percentage: 98.2 %",
+                "Board: ICSE",
+                "School Topper Award for Academic Excellence"
             ]
         }
     ];

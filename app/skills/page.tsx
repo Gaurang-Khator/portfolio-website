@@ -10,23 +10,27 @@ const Skills = () => {
     const skillsData: SkillCategory[] = [
         {
             category: "Frontend Development",
-            skills: ["React", "Next.js", "TypeScript", "Tailwind CSS", "HTML5", "CSS3", "JavaScript", "Responsive Design"]
+            skills: ["React.js", "Next.js", "TypeScript", "Tailwind CSS", "HTML5", "CSS3", "JavaScript"]
         },
         {
             category: "Backend Development",
-            skills: ["Node.js", "Express.js", "PostgreSQL", "MongoDB", "REST APIs", "Authentication", "Database Design"]
+            skills: ["Node.js", "Express.js", "PostgreSQL", "MongoDB", "REST APIs"]
+        },
+        {
+            category: "Databases",
+            skills: ["MySQL", "PostgreSQL", "MongoDB"]
         },
         {
             category: "Cloud & DevOps",
-            skills: ["AWS (S3, EC2, Lambda)", "Cloud Practitioner Certified", "Git", "Docker", "Deployment"]
+            skills: ["AWS (S3, EC2, Lambda)", "Cloud Practitioner Certified", "Git", "Docker"]
         },
         {
             category: "Tools & Technologies",
             skills: ["Clerk", "NextAuth", "Radix UI", "Shadcn", "Vercel", "Firebase", "Prisma ORM"]
         },
         {
-            category: "Problem Solving",
-            skills: ["Data Structures", "Algorithms", "LeetCode (Rating: 1686)", "Codeforces (Rating: 1012)", "Competitive Programming"]
+            category: "CoureWork",
+            skills: ["Data Structures & Algorithms", "Object Oriented Programming", "Database Management Systems", "Operating Systems", "Computer Networks"]
         }
     ];
 
@@ -38,13 +42,13 @@ const Skills = () => {
             </div>
             <CardContent className="text-white text-md overflow-y-auto custom-scrollbar space-y-6">
                 {skillsData.map((category, index) => (
-                    <div key={index} className="space-y-2">
-                        <h3 className="text-blue-400 font-semibold text-base">{category.category}</h3>
-                        <div className="flex flex-wrap gap-2">
+                    <div key={index} className="space-y-3">
+                        <h3 className="text-blue-400 font-semibold text-lg">{category.category}</h3>
+                        <div className="flex flex-wrap gap-3">
                             {category.skills.map((skill, idx) => (
                                 <span 
                                     key={idx}
-                                    className="px-3 py-1 bg-zinc-700 text-gray-300 rounded-full text-sm hover:bg-blue-600 hover:text-white transition-colors"
+                                    className="px-8 py-3 bg-zinc-700 border-1 text-gray-300 rounded-md text-md hover:text-blue-400 hover:cursor-pointer hover:border-blue-500 transition-all"
                                 >
                                     {skill}
                                 </span>

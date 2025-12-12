@@ -53,26 +53,28 @@ const Achievements = () => {
     ];
 
     return (
-        <Card className="bg-zinc-800 border-none rounded-2xl min-h-full pl-4 pr-4 max-h-[550px]">
-            <div className="w-40">
-                <CardHeader className="font-bold text-white text-xl pb-2">ACHIEVEMENTS</CardHeader>
-                <Separator className="pt-1.5 rounded-xl bg-gradient-to-r from-blue-500 via-purple-500 to-blue-500 ml-6 h-1" />
-            </div>
-            <CardContent className="text-white text-md overflow-y-auto custom-scrollbar space-y-3">
-                {achievementsData.map((achievement, index) => (
-                    <div key={index} className="border border-zinc-700 rounded-lg p-3 hover:border-blue-500 transition-colors">
-                        <div className="flex items-start gap-3">
-                            <Award className="text-yellow-400 flex-shrink-0 mt-1" size={20} />
-                            <div className="flex-1">
-                                <h3 className="text-blue-400 font-semibold text-base">{achievement.title}</h3>
-                                <p className="text-gray-300 text-sm mb-2 leading-relaxed">{achievement.description}</p>
-                                <p className="text-gray-500 text-xs">{achievement.date}</p>
+        <div className="min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
+            <Card className="bg-zinc-800 border-none rounded-2xl w-full max-w-2xl lg:max-w-4xl pl-4 pr-4 sm:pl-6 sm:pr-6 max-h-[550px]">
+                <div className="w-40 sm:w-48">
+                    <CardHeader className="font-bold text-white text-lg sm:text-xl pb-2">ACHIEVEMENTS</CardHeader>
+                    <Separator className="pt-1.5 rounded-xl bg-gradient-to-r from-blue-500 via-purple-500 to-blue-500 ml-6 h-1" />
+                </div>
+                <CardContent className="text-white text-sm sm:text-base overflow-y-auto custom-scrollbar space-y-3">
+                    {achievementsData.map((achievement, index) => (
+                        <div key={index} className="border border-zinc-700 rounded-lg p-3 hover:border-blue-500 transition-colors">
+                            <div className="flex items-start gap-3">
+                                <Award className="text-yellow-400 flex-shrink-0 mt-1" size={18} />
+                                <div className="flex-1 min-w-0">
+                                    <h3 className="text-blue-400 font-semibold text-sm sm:text-base break-words">{achievement.title}</h3>
+                                    <p className="text-gray-300 text-xs sm:text-sm mb-2 leading-relaxed">{achievement.description}</p>
+                                    <p className="text-gray-500 text-xs">{achievement.date}</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                ))}
-            </CardContent>
-        </Card>
+                    ))}
+                </CardContent>
+            </Card>
+        </div>
     );
 };
 
