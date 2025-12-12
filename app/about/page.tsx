@@ -6,19 +6,40 @@ const About = () => {
         <Card className="bg-zinc-800 border-none rounded-2xl min-h-full pl-4 pr-4 max-h-[550px]">
             <div className="w-40">
                 <CardHeader className="font-bold text-white text-xl pb-2">ABOUT ME</CardHeader>
-                <Separator className="pt-1.5 rounded-xl bg-linear-to-r from-blue-500 via-purple-500 to-blue-500 ml-6" />
+                <Separator className="pt-1.5 rounded-xl bg-gradient-to-r from-blue-500 via-purple-500 to-blue-500 ml-6 h-1" />
             </div>
-            <CardContent className="text-white text-md overflow-y-auto custom-scrollbar">
-                <p>Hey there! I'm Gaurang Khator, <br />
-I am a results-oriented B.Tech. student in Computer Science and Engineering at Vellore Institute of Technology , set to graduate in May 2026. I am deeply passionate about Full-Stack Web Development and dedicated to building secure, scalable, and beautifully designed digital experiences using modern frameworks. <br />
+            <CardContent className="text-white text-md overflow-y-auto custom-scrollbar space-y-4">
+                <p className="text-gray-300 leading-relaxed">
+                    Hey there! I'm{" "}
+                    <span className="text-blue-400 font-semibold">Gaurang Khator</span>, a results-oriented B.Tech. student in Computer Science and Engineering at Vellore Institute of Technology, set to graduate in May 2026.
+                </p>
 
-I am AWS Certified Cloud Practitioner and have comprehensive, hands-on experience across multiple projects, primarily using the Next.js stack, AWS S3, and PostgreSQL/MongoDB. My work blends robust architecture, strong authentication (Clerk, NextAuth) , and responsive UIs (Tailwind CSS)  to solve real-world problems through smart engineering. <br />
+                <p className="text-gray-300 leading-relaxed">
+                    I am deeply passionate about{" "}
+                    <span className="text-blue-400 font-semibold">Full-Stack Web Development</span> and dedicated to building secure, scalable, and beautifully designed digital experiences using modern frameworks.
+                </p>
 
-Beyond project development, I lead teams and contribute to the technical community. I led the Technical Team at the E-Commerce Club, guiding over 10 members in tech workshops and mentoring juniors in web development. I am also a Hacktoberfest 2025 Super Contributor, successfully merging 6 pull requests to open-source repositories. <br />
+                <p className="text-gray-300 leading-relaxed">
+                    I am an{" "}
+                    <span className="text-blue-400 font-semibold">AWS Certified Cloud Practitioner</span> with comprehensive hands-on experience across multiple projects, primarily using the Next.js stack, AWS S3, and PostgreSQL/MongoDB. My work blends robust architecture, strong authentication (Clerk, NextAuth), and responsive UIs (Tailwind CSS) to solve real-world problems.
+                </p>
 
-With a peak LeetCode rating of 1686 and a Codeforces rating of 1012, I am deeply grounded in algorithms and logic, consistently participating in online contests. I also secured runner-up in the BugOff Hackathon, resolving 8+ critical bugs and implementing new features within 24 hours.<br />
+                <p className="text-gray-300 leading-relaxed">
+                    Beyond development, I{" "}
+                    <span className="text-blue-400 font-semibold">lead teams</span> and contribute to the technical community. I led the Technical Team at the E-Commerce Club, guiding over 10 members and mentoring juniors in web development. I'm also a{" "}
+                    <span className="text-blue-400 font-semibold">Hacktoberfest 2025 Super Contributor</span>, successfully merging 6 pull requests to open-source repositories.
+                </p>
 
-I believe great tech is accessible, scalable, and impactful —and I'm always excited to collaborate and turn ideas into reality.
+                <p className="text-gray-300 leading-relaxed">
+                    With a peak LeetCode rating of{" "}
+                    <span className="text-blue-400 font-semibold">1686</span> and Codeforces rating of{" "}
+                    <span className="text-blue-400 font-semibold">1012</span>, I'm deeply grounded in algorithms. I also secured runner-up in the{" "}
+                    <span className="text-blue-400 font-semibold">BugOff Hackathon</span>, resolving 8+ critical bugs in 24 hours.
+                </p>
+
+                <p className="text-gray-300 leading-relaxed">
+                    I believe great tech is{" "}
+                    <span className="text-blue-400 font-semibold">accessible, scalable, and impactful</span> — always excited to collaborate and turn ideas into reality.
                 </p>
             </CardContent>
         </Card>
