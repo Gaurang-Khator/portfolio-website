@@ -53,7 +53,7 @@ const Education = () => {
                         <div className="flex items-start gap-3 mb-3">
                             <BookOpen className="text-blue-400 shrink-0 mt-1" size={20} />
                             <div className="flex-1 min-w-0">
-                                <h3 className="text-blue-300 font-bold text-sm md:text-base break-words leading-tight">{edu.degree}</h3>
+                                <h3 className="text-blue-400 font-bold text-sm md:text-base break-words leading-tight">{edu.degree}</h3>
                                 <p className="text-gray-400 text-xs md:text-sm mt-1">{edu.institution}</p>
                             </div>
                         </div>
