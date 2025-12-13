@@ -46,7 +46,7 @@ const Education = () => {
         <Card className="bg-zinc-800 border-none rounded-2xl min-h-full pl-2 md:pl-4 pr-2 md:pr-4 max-h-[550px] md:max-h-[550px] w-full">
             <div className="w-40">
                 <CardHeader className="font-bold text-white text-lg md:text-xl pb-2 px-2 md:px-4">EDUCATION</CardHeader>
-                <Separator className="pt-1.5 rounded-xl bg-gradient-to-r from-blue-500 via-purple-500 to-blue-500 ml-2 md:ml-6 h-1" />
+                <Separator className="pt-1 rounded-xl bg-linear-to-r from-blue-500 via-purple-500 to-blue-500 ml-2 md:ml-4" />
             </div>
             <CardContent className="text-white text-xs md:text-md overflow-y-auto custom-scrollbar space-y-3 md:space-y-4 px-2 md:px-4">
                 {educationData.map((edu, index) => (
@@ -58,7 +58,7 @@ const Education = () => {
                         <ul className="space-y-1">
                             {edu.details.map((detail, idx) => (
                                 <li key={idx} className="text-gray-300 text-xs md:text-sm flex items-start gap-2">
-                                    <span className="text-blue-400 mt-0.5 md:mt-1 flex-shrink-0">•</span>
+                                    <span className="text-blue-400 mt-0.5 md:mt-1 shrink-0">•</span>
                                     <span className="break-words">{detail}</span>
                                 </li>
                             ))}

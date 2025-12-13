@@ -38,7 +38,7 @@ const Skills = () => {
         <Card className="bg-zinc-800 border-none rounded-2xl min-h-full pl-2 md:pl-4 pr-2 md:pr-4 max-h-[550px] md:max-h-[550px] w-full">
             <div className="w-40">
                 <CardHeader className="font-bold text-white text-lg md:text-xl pb-2 px-2 md:px-4">SKILLS</CardHeader>
-                <Separator className="pt-1.5 rounded-xl bg-gradient-to-r from-blue-500 via-purple-500 to-blue-500 ml-2 md:ml-6 h-1" />
+                <Separator className="pt-1 rounded-xl bg-linear-to-r from-blue-500 via-purple-500 to-blue-500 ml-2 md:ml-4" />
             </div>
             <CardContent className="text-white text-xs md:text-md overflow-y-auto custom-scrollbar space-y-4 md:space-y-6 px-2 md:px-4">
                 {skillsData.map((category, index) => (
@@ -48,7 +48,7 @@ const Skills = () => {
                             {category.skills.map((skill, idx) => (
                                 <span 
                                     key={idx}
-                                    className="px-4 md:px-8 py-2 md:py-3 bg-zinc-700 border-1 text-gray-300 rounded-md text-xs md:text-md hover:text-blue-400 hover:cursor-pointer hover:border-blue-500 transition-all"
+                                    className="px-4 md:px-8 py-2 md:py-3 bg-zinc-700 border text-gray-300 rounded-md text-xs md:text-md hover:text-blue-400 hover:cursor-pointer hover:border-blue-500 transition-all"
                                 >
                                     {skill}
                                 </span>

@@ -56,13 +56,13 @@ const Achievements = () => {
         <Card className="bg-zinc-800 border-none rounded-2xl min-h-full pl-2 md:pl-4 pr-2 md:pr-4 max-h-[550px] md:max-h-[550px] w-full">
                 <div className="w-40">
                     <CardHeader className="font-bold text-white text-lg md:text-xl pb-2 px-2 md:px-4">ACHIEVEMENTS</CardHeader>
-                    <Separator className="pt-1.5 rounded-xl bg-linear-to-r from-blue-500 via-purple-500 to-blue-500 ml-2 md:ml-6 h-1" />
+                    <Separator className="pt-1 rounded-xl bg-linear-to-r from-blue-500 via-purple-500 to-blue-500 ml-2 md:ml-4" />
                 </div>
                 <CardContent className="text-white text-xs md:text-md overflow-y-auto custom-scrollbar space-y-2 md:space-y-3 px-2 md:px-4">
                     {achievementsData.map((achievement, index) => (
                         <div key={index} className="border border-zinc-700 rounded-lg p-3 hover:border-blue-500 transition-colors">
                             <div className="flex items-start gap-3">
-                                <Award className="text-yellow-400 flex-shrink-0 mt-1" size={18} />
+                                <Award className="text-yellow-400 shrink-0 mt-1" size={18} />
                                 <div className="flex-1 min-w-0">
                                     <h3 className="text-blue-400 font-semibold text-sm sm:text-base break-words">{achievement.title}</h3>
                                     <p className="text-gray-300 text-xs sm:text-sm mb-2 leading-relaxed">{achievement.description}</p>

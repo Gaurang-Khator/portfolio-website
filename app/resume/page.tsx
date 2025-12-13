@@ -11,7 +11,7 @@ const Resume = () => {
         <Card className="bg-zinc-800 border-none rounded-2xl min-h-full pl-2 md:pl-4 pr-2 md:pr-4 max-h-[550px] md:max-h-[550px] w-full">
             <div className="w-40">
                 <CardHeader className="font-bold text-white text-lg md:text-xl pb-2 px-2 md:px-4">RESUME</CardHeader>
-                <Separator className="pt-1 rounded-xl bg-gradient-to-r from-blue-500 via-purple-500 to-blue-500 ml-2 md:ml-6" />
+                <Separator className="pt-1 rounded-xl bg-linear-to-r from-blue-500 via-purple-500 to-blue-500 ml-2 md:ml-4" />
             </div>
             <CardContent className="text-white text-xs md:text-md overflow-y-auto custom-scrollbar flex flex-col items-center justify-center py-6 md:py-12 space-y-4 md:space-y-6">
                 <div className="text-center space-y-2 md:space-y-3">
