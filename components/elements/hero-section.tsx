@@ -5,7 +5,7 @@ import { Facebook, Instagram, LinkedinIcon, Mail, Twitter } from "lucide-react";
 const HeroSection = () => {
     return (
         <div className="flex justify-center md:block">
-            <Card className="bg-zinc-800 min-h-150 w-full md:w-[350px] md:ml-16 md:mt-4 border-zinc-700 rounded-xl shadow-lg">
+            <Card className="bg-zinc-800 min-h-100 w-full md:w-[350px] md:ml-16 md:mt-4 border-zinc-700 rounded-xl shadow-lg">
                 <CardContent> 
                     <img 
                         src="/favicon.png"
