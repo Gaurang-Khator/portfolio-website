@@ -82,8 +82,7 @@ const Certifications = () => {
                                     {cert.link && (
                                         <Button 
                                             size="lg"
-                                            variant="outline"
-                                            className="text-blue-400 border-blue-400 hover:bg-blue-400 hover:text-zinc-800 text-sm h-6 md:h-7"
+                                            className="bg-green-600 hover:bg-green-700 text-white text-sm h-6 md:h-7"
                                             asChild
                                         >
                                             <a href={cert.link} target="_blank" rel="noopener noreferrer">

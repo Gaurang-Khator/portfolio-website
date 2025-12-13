@@ -9,7 +9,6 @@ interface Project {
     title: string;
     description: string;
     image: string;
-    category: string;
     tech: string[];
     github?: string;
     live?: string;
@@ -19,43 +18,39 @@ const ProjectsPage = () => {
     const projectsData: Project[] = [
         {
             id: 1,
-            title: "E-Commerce Platform",
-            description: "A full-stack e-commerce solution with user authentication, product catalog, shopping cart, and secure payment integration using Stripe.",
-            image: "/favicon.png",
-            category: "Full Stack",
-            tech: ["Next.js", "TypeScript", "PostgreSQL", "Tailwind CSS", "Clerk", "Stripe"],
-            github: "https://github.com/Gaurang-Khator",
-            live: "https://example.com"
+            title: "S3-Sync",
+            description: "A next-generation AWS S3 web file manager with authentication and upload, download and preview capabilities.",
+            image: "/s3-sync.png",
+            tech: ["Next.js", "TypeScript", "AWS S3", "Tailwind CSS", "Clerk", "Shadcn-UI"],
+            github: "https://github.com/Gaurang-Khator/s3-file-manager-ui",
+            // live: "https://example.com"
         },
         {
             id: 2,
-            title: "Task Management App",
-            description: "Real-time collaborative task management application with role-based access control, notifications, and data persistence using MongoDB.",
-            image: "/favicon.png",
-            category: "Web App",
-            tech: ["React", "Node.js", "MongoDB", "Socket.io", "JWT", "Express"],
-            github: "https://github.com/Gaurang-Khator",
-            live: "https://example.com"
+            title: "Muziic",
+            description: "Muziic is a collaborative music streaming app where users vote on songs in real-time to create a shared listening experience.",
+            image: "/.png",
+            tech: ["Next.js", "Tailwind CSS", "PostgreSQL"],
+            github: "https://github.com/Gaurang-Khator/muziic",
+            // live: "https://example.com"
         },
         {
             id: 3,
-            title: "AI Content Generator",
-            description: "AI-powered content generation tool leveraging OpenAI API for creating blog posts, social media content, and marketing copy with customizable tone.",
-            image: "/icons8-github-24.png",
-            category: "Generative AI",
-            tech: ["Next.js", "OpenAI API", "Tailwind CSS", "Shadcn", "PostgreSQL"],
-            github: "https://github.com/Gaurang-Khator",
-            live: "https://example.com"
+            title: "Coding Contest Tracker",
+            description: "Coding Contest Tracker is a web-based application that helps competitive programmers stay up-to-date with upcoming, ongoing, and completed contests across multiple platforms such as Codeforces, LeetCode, and CodeChef — all in one dashboard.",
+            image: "/coding-contest.png",
+            tech: ["Next.js", "Tailwind CSS", "Shadcn-UI", "MongoDB"],
+            github: "https://github.com/Gaurang-Khator/Coding-Contest-Tracker",
+            live: "https://coding-contest-tracker-eight.vercel.app/"
         },
         {
             id: 4,
-            title: "Real-time Chat Application",
-            description: "Feature-rich chat application with user presence, typing indicators, file sharing, and message history using WebSockets.",
-            image: "/favicon.png",
-            category: "Real-time App",
-            tech: ["React", "Firebase", "Socket.io", "TailwindCSS", "Redux"],
-            github: "https://github.com/Gaurang-Khator",
-            live: "https://example.com"
+            title: "CodeNexus",
+            description: "CodeNexus is a full-stack EdTech platform that enables instructors to create and manage courses while allowing students to explore and purchase them. It features secure payment handling, cloud media uploads, and a fully responsive frontend.",
+            image: "/.png",
+            tech: ["React.js", "Node.js", "Express.js", "MongoDB", "Tailwind CSS", "Cloudinary", "Razorpay"],
+            github: "https://github.com/Gaurang-Khator/CodeNexus",
+            // live: "https://example.com"
         },
        
     ];
@@ -78,7 +73,7 @@ const ProjectsPage = () => {
                                     src={project.image}
                                     alt={project.title}
                                     fill
-                                    className="object-cover group-hover:scale-110 transition-transform duration-300"
+                                    className="object-cover object-top group-hover:scale-110 transition-transform duration-300"
                                 />
                             </div>
 
@@ -87,7 +82,7 @@ const ProjectsPage = () => {
                                     {project.title}
                                 </h3>
 
-                                <p className="text-gray-300 text-xs md:text-sm leading-relaxed line-clamp-2">
+                                <p className="text-gray-300 text-xs md:text-sm leading-relaxed line-clamp-4">
                                     {project.description}
                                 </p>
 
@@ -95,7 +90,7 @@ const ProjectsPage = () => {
                                     {project.tech.map((tech, idx) => (
                                         <span 
                                             key={idx}
-                                            className="px-1.5 py-0.5 bg-zinc-700 text-gray-300 rounded text-xs hover:bg-blue-600/30 hover:text-blue-400 transition-colors"
+                                            className="px-1.5 py-0.5 bg-zinc-700 text-gray-300 rounded-sm text-xs hover:bg-blue-600/30 hover:text-blue-400 transition-colors"
                                         >
                                             {tech}
                                         </span>
@@ -106,7 +101,7 @@ const ProjectsPage = () => {
                                     {project.github && (
                                         <Button 
                                             size="sm"
-                                            className="bg-blue-600 hover:bg-blue-700 text-white text-xs md:text-sm h-5 md:h-6 flex-1 p-1"
+                                            className="bg-blue-600 hover:bg-blue-700 text-white text-xs md:text-sm h-5 md:h-6 flex-1 p-1 rounded-sm"
                                             asChild
                                         >
                                             <a href={project.github} target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-1">
@@ -117,7 +112,7 @@ const ProjectsPage = () => {
                                     {project.live && (
                                         <Button 
                                             size="sm"
-                                            className="bg-green-600 hover:bg-green-700 text-white text-xs md:text-sm h-5 md:h-6 flex-1 p-1"
+                                            className="bg-green-600 hover:bg-green-700 text-white text-xs md:text-sm h-5 md:h-6 flex-1 p-1 rounded-sm"
                                             asChild
                                         >
                                             <a href={project.live} target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-1">
