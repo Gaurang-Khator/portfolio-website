@@ -26,7 +26,7 @@ const Skills = () => {
         },
         {
             category: "Tools & Technologies",
-            skills: ["GitHub", "Git", "AWS", "Docker", "Clerk", "Shadcn-UI", "Vercel", "Prisma ORM"]
+            skills: ["GitHub", "Git", "AWS", "Docker", "Clerk", "Shadcn-UI", "Vercel", "Postman", "Prisma ORM"]
         },
         {
             category: "COURSEWORK & CONCEPTS",

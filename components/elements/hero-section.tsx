@@ -43,7 +43,7 @@ const HeroSection = () => {
                             </a>
                         </div>
                         <div className="p-2 bg-gray-600 rounded-lg flex justify-center align-items-center">
-                            <a href="" target="_blank">
+                            <a href="https://x.com/GaurangKhator" target="_blank">
                                 <Twitter className="text-gray-400 hover:text-blue-400 w-4 h-4 md:w-5 md:h-5"/> 
                             </a>
                         </div>    

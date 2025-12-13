@@ -51,7 +51,7 @@ const Achievements = () => {
                 </div>
                 <CardContent className="text-white text-xs md:text-md overflow-y-auto custom-scrollbar space-y-2 md:space-y-3 px-2 md:px-4">
                     {achievementsData.map((achievement, index) => (
-                        <div key={index} className="border border-zinc-700 rounded-lg p-3 hover:border-blue-500 transition-colors">
+                        <div key={index} className="bg-linear-to-br from-zinc-700/40 to-zinc-900/40 border border-zinc-600/50 hover:border-blue-500/50 rounded-lg p-3 md:p-4 transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/10">
                             <div className="flex items-start gap-3">
                                 <Award className="text-yellow-400 shrink-0 mt-1.5" size={18} />
                                 <div className="flex-1 min-w-0">

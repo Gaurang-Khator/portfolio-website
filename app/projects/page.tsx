@@ -71,9 +71,8 @@ const ProjectsPage = () => {
                     {projectsData.map((project) => (
                         <div 
                             key={project.id}
-                            className="border border-zinc-700 rounded-lg overflow-hidden hover:border-blue-500 transition-colors group"
+                            className="bg-linear-to-br from-zinc-700/40 to-zinc-900/40 border border-zinc-600/50 hover:border-blue-500/50 rounded-lg overflow-hidden transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/10 group"
                         >
-                            {/* Project Image */}
                             <div className="relative h-24 md:h-32 w-full overflow-hidden bg-zinc-700">
                                 <Image
                                     src={project.image}
@@ -83,26 +82,21 @@ const ProjectsPage = () => {
                                 />
                             </div>
 
-                            {/* Project Content */}
                             <div className="p-2 md:p-3 space-y-1 md:space-y-2">
-                                {/* Category Badge */}
                                 <div>
                                     <span className="inline-block px-2 py-0.5 bg-blue-600/20 text-blue-400 text-xs font-semibold rounded border border-blue-500/30">
                                         {project.category}
                                     </span>
                                 </div>
 
-                                {/* Title */}
                                 <h3 className="text-blue-400 font-semibold text-sm md:text-md group-hover:text-blue-300 transition-colors line-clamp-1">
                                     {project.title}
                                 </h3>
 
-                                {/* Description */}
                                 <p className="text-gray-300 text-xs md:text-sm leading-relaxed line-clamp-2">
                                     {project.description}
                                 </p>
 
-                                {/* Tech Stack */}
                                 <div className="flex flex-wrap gap-1">
                                     {project.tech.slice(0, 2).map((tech, idx) => (
                                         <span 
@@ -117,7 +111,6 @@ const ProjectsPage = () => {
                                     )}
                                 </div>
 
-                                {/* Action Buttons */}
                                 <div className="flex gap-1 md:gap-2 pt-2">
                                     {project.github && (
                                         <Button 
