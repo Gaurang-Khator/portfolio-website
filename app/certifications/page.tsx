@@ -1,7 +1,7 @@
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
 import { Button } from "@/components/ui/button";
-import { CheckCircle } from "lucide-react";
+import { CheckCircle, ExternalLink } from "lucide-react";
 
 interface Certification {
     title: string;
@@ -16,45 +16,45 @@ const Certifications = () => {
         {
             title: "AWS Certified Cloud Practitioner",
             issuer: "Amazon Web Services (AWS)",
-            date: "Issued: May 2025",
-            credentialId: "ABC123XYZ",
-            link: "https://aws.amazon.com/certification/"
+            date: "Issued May 2025",
+            // credentialId: "ABC123XYZ",
+            link: "https://www.credly.com/badges/251ae1b6-0001-417e-b258-8348026dadf6/public_url"
         },
         {
             title: "Oracle Cloud Infrastructure 2025 Certified Generative AI Professional",
             issuer: "Oracle",
-            date: "Completed: October 2025",
-            link: "https://www.udemy.com"
+            date: "Issued October 2025",
+            link: "https://drive.google.com/file/d/1o1CrEuK5g7CXq273ciwmsF4aMqKA4An8/view?usp=sharing"
         },
         {
             title: "Cloud Computing",
             issuer: "NPTEL",
-            date: "Completed: April 2024",
-            link: "https://www.udemy.com"
+            date: "Issued April 2024",
+            link: "https://drive.google.com/file/d/1Y3usYl69ovO57Pag2_QbQkc5YQ5bCQ2A/view?usp=sharing"
         },
         {
             title: "Cyber Security Analyst",
             issuer: "IBM",
-            date: "Completed: April 2025",
-            link: "https://www.codingninjas.com"
+            date: "Issued April 2025",
+            link: "https://drive.google.com/file/d/1fxA5OUTMbeJOoN1hbGYPfJF-CWZXXn_X/view?usp=sharing"
         },
         {
             title: "MERN Full Stack Development",
             issuer: "Ethnus",
-            date: "Completed: April 2025",
-            link: "https://www.coursera.org"
+            date: "Issued April 2025",
+            link: "https://drive.google.com/file/d/1FbXxvLHG2z9-tgkWL7pk8Zwp7jNZZuGZ/view?usp=sharing"
         },
         {
             title: "The Bits and Bytes of Computer Networking",
             issuer: "Google / Coursera",
-            date: "Achieved: December 2023",
-            link: "https://hacktoberfest.digitalocean.com"
+            date: "issued December 2023",
+            link: "https://drive.google.com/file/d/16ojMrWh2rwKyXV1vn6Ky1GE14x9tIyDX/view?usp=sharing"
         },
         {
             title: "Data Analysis with R Programming",
             issuer: "Google / Coursera",
-            date: "Achieved: April 2023",
-            link: "https://hacktoberfest.digitalocean.com"
+            date: "Issued April 2023",
+            link: "https://drive.google.com/file/d/1JShxl1AkxGPTTmIKU0m2NNJTUAkZY96i/view?usp=sharing"
         }
     ];
 
@@ -68,29 +68,36 @@ const Certifications = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-4">
                     {certificationsData.map((cert, index) => (
                         <div key={index} className="bg-linear-to-br from-zinc-700/40 to-zinc-900/40 border border-zinc-600/50 hover:border-blue-500/50 rounded-lg p-3 md:p-4 transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/10">
-                            <div className="flex items-start gap-2 md:gap-3">
-                                <CheckCircle className="text-blue-400 shrink-0 mt-0.5 md:mt-1" size={18} />
-                                <div className="flex-1 min-w-0">
-                                    <h3 className="text-blue-400 font-semibold text-sm md:text-base break-words">{cert.title}</h3>
-                                    <p className="text-gray-400 text-xs md:text-sm mt-1">{cert.issuer}</p>
-                                    <p className="text-gray-500 text-xs md:text-sm mb-2">{cert.date}</p>
-                                    
-                                    {cert.credentialId && (
-                                        <p className="text-gray-400 text-xs mb-2 break-words">ID: {cert.credentialId}</p>
-                                    )}
-
-                                    {cert.link && (
+                            <div className="flex items-start gap-2 md:gap-3 justify-between">
+                                <div className="flex items-start gap-2 md:gap-3 flex-1 min-w-0">
+                                    <CheckCircle className="text-blue-400 shrink-0 mt-0.5 md:mt-1" size={18} />
+                                    <div className="flex-1 min-w-0">
+                                        <h3 className="text-blue-400 font-semibold text-sm md:text-base break-words">{cert.title}</h3>
+                                        <p className="text-gray-400 text-xs md:text-sm mt-1">{cert.issuer}</p>
+                                        <p className="text-gray-500 text-xs md:text-sm mb-2">{cert.date}</p>
+                                        
+                                        {cert.credentialId && (
+                                            <p className="text-gray-400 text-xs mb-2 break-words">ID: {cert.credentialId}</p>
+                                        )}
+                                    </div>
+                                </div>
+                                
+                                {cert.link && (
+                                    <div className="group relative shrink-0 ml-2">
                                         <Button 
-                                            size="lg"
-                                            className="bg-green-600 hover:bg-green-700 text-white text-sm h-6 md:h-7"
+                                            size="sm"
+                                            className="bg-green-600 hover:bg-green-700 text-white p-1 h-7 w-7 flex items-center justify-center"
                                             asChild
                                         >
                                             <a href={cert.link} target="_blank" rel="noopener noreferrer">
-                                                View Credential
+                                                <ExternalLink size={16} />
                                             </a>
                                         </Button>
-                                    )}
-                                </div>
+                                        <div className="absolute bottom-full right-0 mb-2 bg-gray-900 text-white text-xs px-2 py-1 rounded whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none border border-gray-700 z-10">
+                                            View Credential
+                                        </div>
+                                    </div>
+                                )}
                             </div>
                         </div>
                     ))}
