@@ -83,12 +83,6 @@ const ProjectsPage = () => {
                             </div>
 
                             <div className="p-2 md:p-3 space-y-1 md:space-y-2">
-                                <div>
-                                    <span className="inline-block px-2 py-0.5 bg-blue-600/20 text-blue-400 text-xs font-semibold rounded border border-blue-500/30">
-                                        {project.category}
-                                    </span>
-                                </div>
-
                                 <h3 className="text-blue-400 font-semibold text-sm md:text-md group-hover:text-blue-300 transition-colors line-clamp-1">
                                     {project.title}
                                 </h3>
@@ -98,7 +92,7 @@ const ProjectsPage = () => {
                                 </p>
 
                                 <div className="flex flex-wrap gap-1">
-                                    {project.tech.slice(0, 2).map((tech, idx) => (
+                                    {project.tech.map((tech, idx) => (
                                         <span 
                                             key={idx}
                                             className="px-1.5 py-0.5 bg-zinc-700 text-gray-300 rounded text-xs hover:bg-blue-600/30 hover:text-blue-400 transition-colors"
@@ -106,9 +100,6 @@ const ProjectsPage = () => {
                                             {tech}
                                         </span>
                                     ))}
-                                    {project.tech.length > 2 && (
-                                        <span className="text-gray-400 text-xs">+{project.tech.length - 2}</span>
-                                    )}
                                 </div>
 
                                 <div className="flex gap-1 md:gap-2 pt-2">
