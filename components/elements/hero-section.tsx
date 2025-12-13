@@ -32,41 +32,41 @@ const HeroSection = () => {
                     <Separator className="my-4 h-px bg-gray-600" />
                     <h1 className="text-xs md:text-sm font-bold text-center mt-4 text-white">CONNECT</h1>
                     <div className="flex justify-center gap-2 md:gap-3 pt-3 flex-wrap">
-                        <div className="p-2 bg-gray-600 rounded-lg flex justify-center align-items-center hover:bg-blue-500 transition-colors">
+                        <div className="p-2 bg-gray-600 rounded-lg flex justify-center align-items-center">
                             <a href="https://www.linkedin.com/in/gaurang2201/" target="_blank">
-                                <LinkedinIcon className="text-gray-400 hover:text-white w-4 h-4 md:w-5 md:h-5"/> 
+                                <LinkedinIcon className="text-gray-400 hover:text-blue-400 w-4 h-4 md:w-5 md:h-5"/> 
                             </a>
                         </div>   
-                        <div className="p-2 bg-gray-600 rounded-lg flex justify-center align-items-center hover:bg-blue-500 transition-colors">
+                        <div className="p-2 bg-gray-600 rounded-lg flex justify-center align-items-center ">
                             <a href="https://www.instagram.com/gaurang_khator" target="_blank">
-                                <Instagram className="text-gray-400 hover:text-white w-4 h-4 md:w-5 md:h-5"/> 
+                                <Instagram className="text-gray-400 hover:text-blue-400 w-4 h-4 md:w-5 md:h-5"/> 
                             </a>
                         </div>
-                        <div className="p-2 bg-gray-600 rounded-lg flex justify-center align-items-center hover:bg-blue-500 transition-colors">
+                        <div className="p-2 bg-gray-600 rounded-lg flex justify-center align-items-center">
                             <a href="" target="_blank">
-                                <Twitter className="text-gray-400 hover:text-white w-4 h-4 md:w-5 md:h-5"/> 
+                                <Twitter className="text-gray-400 hover:text-blue-400 w-4 h-4 md:w-5 md:h-5"/> 
                             </a>
                         </div>    
-                        <div className="p-2 bg-gray-600 rounded-lg flex justify-center align-items-center hover:bg-blue-500 transition-colors">
+                        <div className="p-2 bg-gray-600 rounded-lg flex justify-center align-items-center">
                             <a href="" target="_blank">
-                                <Facebook className="text-gray-400 hover:text-white w-4 h-4 md:w-5 md:h-5"/> 
+                                <Facebook className="text-gray-400 hover:text-blue-400 w-4 h-4 md:w-5 md:h-5"/> 
                             </a>
                         </div>            
                     </div>   
                     <Separator className="my-4 h-px bg-gray-600" />
                     <h1 className="text-xs md:text-sm font-bold text-center mt-4 text-white">CODING PROFILES</h1>
                     <div className="flex justify-center gap-2 md:gap-3 pt-3 flex-wrap">   
-                        <div className="p-2 bg-gray-600 rounded-lg flex justify-center align-items-center hover:bg-blue-500 transition-colors">
+                        <div className="p-2 bg-gray-600 rounded-lg flex justify-center align-items-center">
                             <a href="https://www.github.com/Gaurang-Khator" target="_blank">
                                 <img src="/icons8-github-24.png" alt="GitHub" className="w-4 h-4 md:w-6 md:h-6"/>
                             </a>
                         </div>
-                        <div className="p-2 bg-gray-600 rounded-lg flex justify-center align-items-center hover:bg-blue-500 transition-colors">
+                        <div className="p-2 bg-gray-600 rounded-lg flex justify-center align-items-center ">
                             <a href="https://leetcode.com/u/gaurang_khator/" target="_blank">
                                 <img src="/icons8-leetcode-24.png" alt="LeetCode" className="w-4 h-4 md:w-6 md:h-6"/>
                             </a>
                         </div>    
-                        <div className="p-2 bg-gray-600 rounded-lg flex justify-center align-items-center hover:bg-blue-500 transition-colors">
+                        <div className="p-2 bg-gray-600 rounded-lg flex justify-center align-items-center">
                             <a href="https://codeforces.com/profile/gaurang_khator" target="_blank">
                                 <img src="/icons8-codeforces-24.png" alt="Codeforces" className="w-4 h-4 md:w-6 md:h-6"/>
                             </a>

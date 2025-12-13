@@ -9,28 +9,28 @@ interface SkillCategory {
 const Skills = () => {
     const skillsData: SkillCategory[] = [
         {
-            category: "Frontend Development",
-            skills: ["React.js", "Next.js", "TypeScript", "Tailwind CSS", "HTML5", "CSS3", "JavaScript"]
+            category: "PROGRAMMING LANGUAGES",
+            skills: ["C++", "Python", "Java", "Javascript", "SQL"]
         },
         {
-            category: "Backend Development",
-            skills: ["Node.js", "Express.js", "PostgreSQL", "MongoDB", "REST APIs"]
+            category: "FRONTEND DEVELOPMENT",
+            skills: ["React.js", "Next.js", "TypeScript", "Tailwind CSS", "HTML5", "CSS3"]
         },
         {
-            category: "Databases",
+            category: "BACKEND DEVELOPMENT",
+            skills: ["Node.js", "Express.js", "REST APIs"]
+        },
+        {
+            category: "DATABASES",
             skills: ["MySQL", "PostgreSQL", "MongoDB"]
         },
         {
-            category: "Cloud & DevOps",
-            skills: ["AWS (S3, EC2, Lambda)", "Cloud Practitioner Certified", "Git", "Docker"]
-        },
-        {
             category: "Tools & Technologies",
-            skills: ["Clerk", "NextAuth", "Radix UI", "Shadcn", "Vercel", "Firebase", "Prisma ORM"]
+            skills: ["GitHub", "Git", "AWS", "Docker", "Clerk", "Shadcn-UI", "Vercel", "Prisma ORM"]
         },
         {
-            category: "CoureWork",
-            skills: ["Data Structures & Algorithms", "Object Oriented Programming", "Database Management Systems", "Operating Systems", "Computer Networks"]
+            category: "COURSEWORK & CONCEPTS",
+            skills: ["Data Structures & Algorithms", "Object Oriented Programming", "Database Management Systems", "Operating Systems", "Computer Networks", "SOLID Principles"]
         }
     ];
 
@@ -43,7 +43,7 @@ const Skills = () => {
             <CardContent className="text-white text-xs md:text-md overflow-y-auto custom-scrollbar space-y-4 md:space-y-6 px-2 md:px-4">
                 {skillsData.map((category, index) => (
                     <div key={index} className="space-y-2 md:space-y-3">
-                        <h3 className="text-blue-400 font-semibold text-base md:text-lg">{category.category}</h3>
+                        <h3 className="text-blue-400 font-semibold text-base md:text-md">{category.category}</h3>
                         <div className="flex flex-wrap gap-2 md:gap-3">
                             {category.skills.map((skill, idx) => (
                                 <span 

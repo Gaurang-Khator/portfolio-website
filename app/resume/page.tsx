@@ -15,7 +15,7 @@ const Resume = () => {
             </div>
             <CardContent className="text-white text-xs md:text-md overflow-y-auto custom-scrollbar flex flex-col items-center justify-center py-6 md:py-12 space-y-4 md:space-y-6">
                 <div className="text-center space-y-2 md:space-y-3">
-                    <h3 className="text-base md:text-lg font-semibold text-blue-400">Download My Resume</h3>
+                    {/* <h3 className="text-base md:text-lg font-semibold text-blue-400">Download My Resume</h3> */}
                     <p className="text-gray-300 text-xs md:text-sm">Get a complete overview of my skills, experience, and achievements</p>
                 </div>
 

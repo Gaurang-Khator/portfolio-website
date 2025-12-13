@@ -13,7 +13,7 @@ const Achievements = () => {
         {
             title: "BugOff Hackathon - Runner Up",
             description: "Resolved 8+ critical bugs and implemented new features within 24 hours, securing runner-up position among 50+ teams.",
-            date: "2025"
+            date: "2023"
         },
         {
             title: "Hacktoberfest 2025 - Super Contributor",
@@ -21,35 +21,26 @@ const Achievements = () => {
             date: "October 2025"
         },
         {
-            title: "LeetCode - Peak Rating 1686",
+            title: "LeetCode - Peak Rating 1726",
             description: "Achieved peak rating of 1686 on LeetCode, demonstrating strong problem-solving skills in data structures and algorithms.",
-            date: "2024"
+            date: "Present"
         },
         {
-            title: "Codeforces - Rating 1012",
+            title: "Codeforces - Rating 1013",
             description: "Maintained a consistent rating of 1012 on Codeforces, participating actively in competitive programming contests.",
-            date: "2024"
+            date: "Present"
         },
         {
             title: "E-Commerce Club - Technical Team Lead",
             description: "Led the Technical Team with 10+ members, conducting workshops and mentoring juniors in full-stack web development.",
-            date: "2024 - Present"
+            date: "2023 - 2025"
         },
         {
             title: "AWS Certified Cloud Practitioner",
             description: "Successfully obtained AWS Cloud Practitioner certification, validating knowledge of cloud computing fundamentals and AWS services.",
-            date: "March 2024"
+            date: "May 2025"
         },
-        {
-            title: "Innovation in Student Project",
-            description: "Developed an innovative full-stack solution that improved data processing efficiency by 40% for a major tech company.",
-            date: "2024"
-        },
-        {
-            title: "Dean's List Recognition",
-            description: "Recognized on the Dean's List for outstanding academic performance and contributions to the institution.",
-            date: "2024"
-        }
+        
     ];
 
     return (
@@ -62,7 +53,7 @@ const Achievements = () => {
                     {achievementsData.map((achievement, index) => (
                         <div key={index} className="border border-zinc-700 rounded-lg p-3 hover:border-blue-500 transition-colors">
                             <div className="flex items-start gap-3">
-                                <Award className="text-yellow-400 shrink-0 mt-1" size={18} />
+                                <Award className="text-yellow-400 shrink-0 mt-1.5" size={18} />
                                 <div className="flex-1 min-w-0">
                                     <h3 className="text-blue-400 font-semibold text-sm sm:text-base break-words">{achievement.title}</h3>
                                     <p className="text-gray-300 text-xs sm:text-sm mb-2 leading-relaxed">{achievement.description}</p>
