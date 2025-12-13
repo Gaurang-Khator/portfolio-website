@@ -53,13 +53,12 @@ const Achievements = () => {
     ];
 
     return (
-        <div className="min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
-            <Card className="bg-zinc-800 border-none rounded-2xl w-full max-w-2xl lg:max-w-4xl pl-4 pr-4 sm:pl-6 sm:pr-6 max-h-[550px]">
-                <div className="w-40 sm:w-48">
-                    <CardHeader className="font-bold text-white text-lg sm:text-xl pb-2">ACHIEVEMENTS</CardHeader>
-                    <Separator className="pt-1.5 rounded-xl bg-gradient-to-r from-blue-500 via-purple-500 to-blue-500 ml-6 h-1" />
+        <Card className="bg-zinc-800 border-none rounded-2xl min-h-full pl-2 md:pl-4 pr-2 md:pr-4 max-h-[550px] md:max-h-[550px] w-full">
+                <div className="w-40">
+                    <CardHeader className="font-bold text-white text-lg md:text-xl pb-2 px-2 md:px-4">ACHIEVEMENTS</CardHeader>
+                    <Separator className="pt-1.5 rounded-xl bg-linear-to-r from-blue-500 via-purple-500 to-blue-500 ml-2 md:ml-6 h-1" />
                 </div>
-                <CardContent className="text-white text-sm sm:text-base overflow-y-auto custom-scrollbar space-y-3">
+                <CardContent className="text-white text-xs md:text-md overflow-y-auto custom-scrollbar space-y-2 md:space-y-3 px-2 md:px-4">
                     {achievementsData.map((achievement, index) => (
                         <div key={index} className="border border-zinc-700 rounded-lg p-3 hover:border-blue-500 transition-colors">
                             <div className="flex items-start gap-3">
@@ -74,7 +73,6 @@ const Achievements = () => {
                     ))}
                 </CardContent>
             </Card>
-        </div>
     );
 };
 

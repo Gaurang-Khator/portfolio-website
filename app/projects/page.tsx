@@ -61,20 +61,20 @@ const ProjectsPage = () => {
     ];
 
     return (
-        <Card className="bg-zinc-800 border-none rounded-2xl min-h-full pl-4 pr-4 max-h-[550px]">
+        <Card className="bg-zinc-800 border-none rounded-2xl min-h-full pl-2 md:pl-4 pr-2 md:pr-4 max-h-[550px] md:max-h-[550px] w-full">
             <div className="w-40">
-                <CardHeader className="font-bold text-white text-xl pb-2">PROJECTS</CardHeader>
-                <Separator className="pt-1.5 rounded-xl bg-gradient-to-r from-blue-500 via-purple-500 to-blue-500 ml-6 h-1" />
+                <CardHeader className="font-bold text-white text-lg md:text-xl pb-2 px-2 md:px-4">PROJECTS</CardHeader>
+                <Separator className="pt-1.5 rounded-xl bg-gradient-to-r from-blue-500 via-purple-500 to-blue-500 ml-2 md:ml-6 h-1" />
             </div>
-            <CardContent className="text-white text-md overflow-y-auto custom-scrollbar mb-4">
-                <div className="grid grid-cols-2 gap-4">
+            <CardContent className="text-white text-xs md:text-md overflow-y-auto custom-scrollbar mb-4 px-2 md:px-4">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-4">
                     {projectsData.map((project) => (
                         <div 
                             key={project.id}
                             className="border border-zinc-700 rounded-lg overflow-hidden hover:border-blue-500 transition-colors group"
                         >
                             {/* Project Image */}
-                            <div className="relative h-32 w-full overflow-hidden bg-zinc-700">
+                            <div className="relative h-24 md:h-32 w-full overflow-hidden bg-zinc-700">
                                 <Image
                                     src={project.image}
                                     alt={project.title}
@@ -84,7 +84,7 @@ const ProjectsPage = () => {
                             </div>
 
                             {/* Project Content */}
-                            <div className="p-3 space-y-2">
+                            <div className="p-2 md:p-3 space-y-1 md:space-y-2">
                                 {/* Category Badge */}
                                 <div>
                                     <span className="inline-block px-2 py-0.5 bg-blue-600/20 text-blue-400 text-xs font-semibold rounded border border-blue-500/30">
@@ -93,18 +93,18 @@ const ProjectsPage = () => {
                                 </div>
 
                                 {/* Title */}
-                                <h3 className="text-blue-400 font-semibold text-md group-hover:text-blue-300 transition-colors line-clamp-1">
+                                <h3 className="text-blue-400 font-semibold text-sm md:text-md group-hover:text-blue-300 transition-colors line-clamp-1">
                                     {project.title}
                                 </h3>
 
                                 {/* Description */}
-                                <p className="text-gray-300 text-sm leading-relaxed line-clamp-2">
+                                <p className="text-gray-300 text-xs md:text-sm leading-relaxed line-clamp-2">
                                     {project.description}
                                 </p>
 
                                 {/* Tech Stack */}
                                 <div className="flex flex-wrap gap-1">
-                                    {project.tech.slice(0, 3).map((tech, idx) => (
+                                    {project.tech.slice(0, 2).map((tech, idx) => (
                                         <span 
                                             key={idx}
                                             className="px-1.5 py-0.5 bg-zinc-700 text-gray-300 rounded text-xs hover:bg-blue-600/30 hover:text-blue-400 transition-colors"
@@ -112,32 +112,32 @@ const ProjectsPage = () => {
                                             {tech}
                                         </span>
                                     ))}
-                                    {project.tech.length > 3 && (
-                                        <span className="text-gray-400 text-xs">+{project.tech.length - 3}</span>
+                                    {project.tech.length > 2 && (
+                                        <span className="text-gray-400 text-xs">+{project.tech.length - 2}</span>
                                     )}
                                 </div>
 
                                 {/* Action Buttons */}
-                                <div className="flex gap-2 pt-2">
+                                <div className="flex gap-1 md:gap-2 pt-2">
                                     {project.github && (
                                         <Button 
                                             size="sm"
-                                            className="bg-blue-600 hover:bg-blue-700 text-white text-sm h-6 flex-1 p-1"
+                                            className="bg-blue-600 hover:bg-blue-700 text-white text-xs md:text-sm h-5 md:h-6 flex-1 p-1"
                                             asChild
                                         >
                                             <a href={project.github} target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-1">
-                                                <Github size={12} /> Code
+                                                <Github size={10} /> Code
                                             </a>
                                         </Button>
                                     )}
                                     {project.live && (
                                         <Button 
                                             size="sm"
-                                            className="bg-green-600 hover:bg-green-700 text-white text-sm h-6 flex-1 p-1"
+                                            className="bg-green-600 hover:bg-green-700 text-white text-xs md:text-sm h-5 md:h-6 flex-1 p-1"
                                             asChild
                                         >
                                             <a href={project.live} target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-1">
-                                                <ExternalLink size={12} /> Live
+                                                <ExternalLink size={10} /> Live
                                             </a>
                                         </Button>
                                     )}

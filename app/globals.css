@@ -144,4 +144,23 @@
     scrollbar-width: thin;
     scrollbar-color: #3b82f6 #3f3f46;
   }
+  
+  /* Mobile-specific optimizations */
+  @media (max-width: 768px) {
+    body {
+      font-size: 14px;
+    }
+    
+    * {
+      -webkit-tap-highlight-color: transparent;
+    }
+  }
+  
+  /* Responsive text scaling */
+  @media (max-width: 640px) {
+    h1 { @apply text-lg; }
+    h2 { @apply text-base; }
+    h3 { @apply text-sm; }
+    p { @apply text-xs; }
+  }
 }
