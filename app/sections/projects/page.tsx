@@ -29,8 +29,8 @@ const ProjectsPage = () => {
             id: 2,
             title: "Muziic",
             description: "Muziic is a collaborative music streaming app where users vote on songs in real-time to create a shared listening experience.",
-            image: "/.png",
-            tech: ["Next.js", "Tailwind CSS", "PostgreSQL"],
+            image: "/music.png",
+            tech: ["Next.js", "Tailwind CSS", "PostgreSQL", "Sahdcn-UI", "Prisma"],
             github: "https://github.com/Gaurang-Khator/muziic",
             // live: "https://example.com"
         },
@@ -47,7 +47,7 @@ const ProjectsPage = () => {
             id: 4,
             title: "CodeNexus",
             description: "CodeNexus is a full-stack EdTech platform that enables instructors to create and manage courses while allowing students to explore and purchase them. It features secure payment handling, cloud media uploads, and a fully responsive frontend.",
-            image: "/.png",
+            image: "/codenexus.png",
             tech: ["React.js", "Node.js", "Express.js", "MongoDB", "Tailwind CSS", "Cloudinary", "Razorpay"],
             github: "https://github.com/Gaurang-Khator/CodeNexus",
             // live: "https://example.com"
@@ -66,7 +66,7 @@ const ProjectsPage = () => {
                     {projectsData.map((project) => (
                         <div 
                             key={project.id}
-                            className="bg-linear-to-br from-zinc-700/40 to-zinc-900/40 border border-zinc-600/50 hover:border-blue-500/50 rounded-lg overflow-hidden transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/10 group"
+                            className="bg-linear-to-br from-zinc-700/40 to-zinc-900/40 border border-zinc-600/50 hover:border-blue-500/50 rounded-lg overflow-hidden transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/10 group flex flex-col"
                         >
                             <div className="relative h-24 md:h-32 w-full overflow-hidden bg-zinc-700">
                                 <Image
@@ -77,27 +77,27 @@ const ProjectsPage = () => {
                                 />
                             </div>
 
-                            <div className="p-2 md:p-3 space-y-1 md:space-y-2">
-                                <h3 className="text-blue-400 font-semibold text-sm md:text-md group-hover:text-blue-300 transition-colors line-clamp-1">
+                            <div className="p-2 md:p-3 flex flex-col flex-1">
+                                <h3 className="text-blue-400 font-semibold text-sm md:text-md group-hover:text-blue-300 transition-colors line-clamp-1 mb-1 md:mb-2">
                                     {project.title}
                                 </h3>
 
-                                <p className="text-gray-300 text-xs md:text-sm leading-relaxed line-clamp-4">
+                                <p className="text-gray-300 text-xs md:text-sm leading-relaxed line-clamp-4 mb-1 md:mb-2">
                                     {project.description}
                                 </p>
 
-                                <div className="flex flex-wrap gap-1">
+                                <div className="flex flex-wrap gap-2 mb-3">
                                     {project.tech.map((tech, idx) => (
                                         <span 
                                             key={idx}
-                                            className="px-1.5 py-0.5 bg-zinc-700 text-gray-300 rounded-sm text-xs hover:bg-blue-600/30 hover:text-blue-400 transition-colors"
+                                            className="px-2 py-1 bg-zinc-700 text-gray-300 rounded-sm text-xs hover:bg-blue-600/30 hover:text-blue-400 transition-colors"
                                         >
                                             {tech}
                                         </span>
                                     ))}
                                 </div>
 
-                                <div className="flex gap-1 md:gap-2 pt-2">
+                                <div className="flex gap-1 md:gap-2 mt-auto pt-2">
                                     {project.github && (
                                         <Button 
                                             size="sm"

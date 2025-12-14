@@ -47,11 +47,11 @@ const HeroSection = () => {
                                 <Twitter className="text-gray-400 hover:text-blue-400 w-4 h-4 md:w-5 md:h-5"/> 
                             </a>
                         </div>    
-                        <div className="p-2 bg-gray-600 rounded-lg flex justify-center align-items-center">
+                        {/* <div className="p-2 bg-gray-600 rounded-lg flex justify-center align-items-center">
                             <a href="" target="_blank">
                                 <Facebook className="text-gray-400 hover:text-blue-400 w-4 h-4 md:w-5 md:h-5"/> 
                             </a>
-                        </div>            
+                        </div>             */}
                     </div>   
                     <Separator className="my-4 h-px bg-gray-600" />
                     <h1 className="text-xs md:text-sm font-bold text-center mt-4 text-white">CODING PROFILES</h1>
