@@ -14,7 +14,7 @@ const About = () => {
                     <span className="text-blue-400 font-semibold">Gaurang Khator</span>, a dedicated <span className="text-blue-400 font-semibold">Computer Science & Engineering </span>undergraduate at Vellore Institute of Technology, with a strong passion for software development and problem-solving. Having completed my Class 10 in Dehradun and Class 12 in Ahmedabad, I am set to graduate in May 2026 with a focus on building scalable, secure, and user-centric applications.
                 </p>
 
-                <p className="text-gray-300 leading-relaxed">I'm <span className="text-blue-400 font-semibold">AWS and Oracle certified</span>, with hands-on experience across cloud-integrated full-stack projects using <span className="text-blue-400 font-semibold">React.js, Next.js, Node.js,</span> and modern <span className="text-blue-400 font-semibold">database technologies</span>. From building end-to-end platforms to optimizing cloud workflows, I focus on writing clean, efficient, and maintainable code that turns product vision into reality.
+                <p className="text-gray-300 leading-relaxed">I'm <span className="text-blue-400 font-semibold">AWS and Oracle certified</span>, with hands-on experience across cloud-integrated full-stack projects using <span className="text-blue-400 font-semibold">React.js, Next.js, Node.js,</span> and modern <span className="text-blue-400 font-semibold">database technologies</span>. My work blends creativity with performance, solving real-world problems through smart engineering.
                 </p>
 
                 <p className="text-gray-300 leading-relaxed">Professionally, I've led multiple team-based technical projects as the <span className="text-blue-400 font-semibold">Technical Team Lead at the E-Commerce Club</span>, driving innovation and collaboration through real-world product development. I was recognized as a <span className="text-blue-400 font-semibold">Hacktoberfest 2025 Super Contributor</span> and achieved <span className="text-blue-400 font-semibold">runner-up position</span> in the <span className="text-blue-400 font-semibold">Bugoff Hackathon 2023</span>, demonstrating strong leadership and the ability to deliver results under pressure.
@@ -22,7 +22,8 @@ const About = () => {
 
                 <p className="text-gray-300 leading-relaxed">Beyond development, I'm passionate about competitive programming, with a <span className="text-blue-400 font-semibold">LeetCode rating of 1726</span> (Top <span className="text-blue-400 font-semibold">10% globally</span>) and a <span className="text-blue-400 font-semibold">Codeforces rating of 1013</span>. Having <span className="text-blue-400 font-semibold">solved 500+ problems</span> across multiple platforms, I continually strengthen my skills in algorithms, data structures, and logical problem-solving.
                 </p>
-
+                <p className="text-gray-300 leading-relaxed">Outside of tech, I enjoy playing cricket and badminton, as well as exploring new places through travelling, which help me stay active, focused, and inspired.
+                </p>
                 <p className="text-gray-300 leading-relaxed">My goal is to grow as a <span className="text-blue-400 font-semibold">Software Engineer</span> by embracing new challenges, learning from diverse experiences, and contributing to impactful, scalable technology solutions that drive innovation.
                 
                 </p>
