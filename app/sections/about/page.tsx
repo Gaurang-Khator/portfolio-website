@@ -11,21 +11,10 @@ const About = () => {
             <CardContent className="text-white text-md md:text-md overflow-y-auto custom-scrollbar space-y-3 md:space-y-4 px-2 md:px-4">
                 <p className="text-gray-300 leading-relaxed">
                     Hey there! I'm{" "}
-                    <span className="text-blue-400 font-semibold">Gaurang Khator</span>, a passionate Computer Science & Engineering undergraduate from Ahmedabad, Gujarat, with a
-                strong interest in software development and problem-solving. I completed my{" "}
-                <span className="text-blue-400 font-semibold">Class 10 </span>{" "}
-                education in Dehradun and{" "}
-                <span className="text-blue-400 font-semibold">Class 12 </span>in Ahmedabad, and 
-                I am currently pursuing my{" "}
-                <span className="text-blue-400 font-semibold">B.Tech</span> in <span className="text-blue-400 font-semibold">Computer Science Engineering  </span>
-                at Vellore Institute of Technology, set to graduate in May 2026.
+                    <span className="text-blue-400 font-semibold">Gaurang Khator</span>, a dedicated <span className="text-blue-400 font-semibold">Computer Science & Engineering </span>undergraduate at Vellore Institute of Technology, with a strong passion for software development and problem-solving. Having completed my Class 10 in Dehradun and Class 12 in Ahmedabad, I am set to graduate in May 2026 with a focus on building scalable, secure, and user-centric applications.
                 </p>
 
-                <p className="text-gray-300 leading-relaxed">I am particularly passionate about{" "}
-                <span className="text-blue-400 font-semibold">Full-Stack Development</span>{" "}
-                and enjoy building scalable, secure, and user-focused applications using modern technologies. I am an{" "}
-                <span className="text-blue-400 font-semibold">AWS Certified Cloud Practitioner</span>, with hands-on experience working with{" "}
-                <span className="text-blue-400 font-semibold">React.js, Next.js, Node.js, Databases</span>, and <span className="text-blue-400 font-semibold">cloud services</span>{" "}across multiple projects.
+                <p className="text-gray-300 leading-relaxed">I am an <span className="text-blue-400 font-semibold">AWS Certified Cloud Practitioner</span>, with hands-on experience across cloud-integrated full-stack projects using <span className="text-blue-400 font-semibold">React.js, Next.js, Node.js,</span> and modern <span className="text-blue-400 font-semibold">database technologies</span>. From building end-to-end platforms to optimizing cloud workflows, I focus on writing clean, efficient, and maintainable code that turns product vision into reality.
                 </p>
 
                 <p className="text-gray-300 leading-relaxed">Alongside technical skills, I bring experience in{" "}
@@ -38,8 +27,8 @@ const About = () => {
                 <span className="text-blue-400 font-semibold">Data Structures and Algorithms</span>{" "} to build a strong foundation for real-world software development.
                 </p>
 
-                <p className="text-gray-300 leading-relaxed">I aim to grow as a{" "}
-                <span className="text-blue-400 font-semibold">Software Engineer</span>, continuously learning and contributing to impactful, scalable technology solutions.
+                <p className="text-gray-300 leading-relaxed">My goal is to grow as a <span className="text-blue-400 font-semibold">Software Engineer</span> by embracing new challenges, learning from diverse experiences, and contributing to impactful, scalable technology solutions that drive innovation.
+                
                 </p>
 
             </CardContent>
