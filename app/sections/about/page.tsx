@@ -24,9 +24,8 @@ const About = () => {
                 </p>
                 <p className="text-gray-300 leading-relaxed">Outside of tech, I enjoy playing cricket and badminton, as well as exploring new places through travelling, which help me stay active, focused, and inspired.
                 </p>
-                <p className="text-gray-300 leading-relaxed">My goal is to grow as a <span className="text-blue-400 font-semibold">Software Engineer</span> by embracing new challenges, learning from diverse experiences, and contributing to impactful, scalable technology solutions that drive innovation.
-                
-                </p>
+                {/* <p className="text-gray-300 leading-relaxed">My goal is to grow as a <span className="text-blue-400 font-semibold">Software Engineer</span> by embracing new challenges, learning from diverse experiences, and contributing to impactful, scalable technology solutions that drive innovation.
+                </p> */}
 
             </CardContent>
         </Card>

@@ -52,6 +52,14 @@ const ProjectsPage = () => {
             github: "https://github.com/Gaurang-Khator/CodeNexus",
             // live: "https://example.com"
         },
+        {
+            id: 5,
+            title: "Multiple Disease Prediction System",
+            description: "A Multiple Disease Prediction System is a MERN + ML full-stack project that predicts diseases like heart disease and diabetes using machine learning models on user health data.",
+            image: "/diseasePred.png",
+            tech: ["React.js", "Node.js", "Express.js", "MongoDB", "Tailwind CSS", "Machine Learning", "Cloudinary"],
+            github: "https://github.com/Gaurang-Khator",
+        },
        
     ];
 
