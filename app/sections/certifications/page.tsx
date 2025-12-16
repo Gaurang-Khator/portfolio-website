@@ -66,7 +66,7 @@ const Certifications = () => {
                     <CardHeader className="font-bold text-white text-lg md:text-xl pb-2 px-2 md:px-4">CERTIFICATIONS</CardHeader>
                     <Separator className="pt-1 rounded-xl bg-linear-to-r from-blue-500 via-purple-500 to-blue-500 ml-2 md:ml-4" />
                 </div>
-                <CardContent className="text-white text-xs md:text-md overflow-y-auto custom-scrollbar px-2 md:px-4 py-4">
+                <CardContent className="text-white text-xs md:text-md overflow-y-auto custom-scrollbar px-2 md:px-4 mb-4">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-4">
                         {certificationsData.map((cert, index) => (
                             <div key={index} className="bg-linear-to-br from-zinc-700/40 to-zinc-900/40 border border-zinc-600/50 hover:border-blue-500/50 rounded-lg p-3 md:p-4 transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/10">

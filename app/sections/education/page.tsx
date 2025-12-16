@@ -46,7 +46,7 @@ const Education = () => {
                 <CardHeader className="font-bold text-white text-lg md:text-xl pb-2 px-2 md:px-4">EDUCATION</CardHeader>
                 <Separator className="pt-1 rounded-xl bg-linear-to-r from-blue-500 via-purple-500 to-blue-500 ml-2 md:ml-4 h-1" />
             </div>
-            <CardContent className="text-white overflow-y-auto custom-scrollbar space-y-4 px-2 md:px-4 py-4">
+            <CardContent className="text-white overflow-y-auto custom-scrollbar space-y-4 px-2 md:px-4 mb-4">
                 {educationData.map((edu, index) => (
                     <div key={index} className="group relative bg-linear-to-br from-zinc-700/40 to-zinc-900/40 border border-zinc-600/50 hover:border-blue-500/50 rounded-xl p-4 md:p-5 transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/10">
                 
