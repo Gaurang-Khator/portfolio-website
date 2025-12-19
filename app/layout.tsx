@@ -14,6 +14,8 @@ import Achievements from "./sections/achievements/page";
 import Education from "./sections/education/page";
 import Resume from "./sections/resume/page";
 
+import { Analytics } from "@vercel/analytics/next"
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -72,6 +74,7 @@ export default function RootLayout({
               {renderSection()}
             </section>
           </main>
+          <Analytics />
         </div>
       </body>
     </html>
