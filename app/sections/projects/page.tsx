@@ -27,15 +27,6 @@ const ProjectsPage = () => {
         },
         {
             id: 2,
-            title: "Muziic",
-            description: "Muziic is a collaborative music streaming app where users vote on songs in real-time to create a shared listening experience.",
-            image: "/music.png",
-            tech: ["Next.js", "Tailwind CSS", "PostgreSQL", "Sahdcn-UI", "Prisma"],
-            github: "https://github.com/Gaurang-Khator/muziic",
-            // live: "https://example.com"
-        },
-        {
-            id: 3,
             title: "Coding Contest Tracker",
             description: "Coding Contest Tracker is a web-based application that helps competitive programmers stay up-to-date with upcoming, ongoing, and completed contests across multiple platforms such as Codeforces, LeetCode, and CodeChef — all in one dashboard.",
             image: "/coding-contest.png",
@@ -44,7 +35,7 @@ const ProjectsPage = () => {
             live: "https://coding-contest-tracker-eight.vercel.app/"
         },
         {
-            id: 4,
+            id: 3,
             title: "CodeNexus",
             description: "CodeNexus is a full-stack EdTech platform that enables instructors to create and manage courses while allowing students to explore and purchase them. It features secure payment handling, cloud media uploads, and a fully responsive frontend.",
             image: "/codenexus.png",
@@ -53,12 +44,21 @@ const ProjectsPage = () => {
             // live: "https://example.com"
         },
         {
-            id: 5,
+            id: 4,
             title: "Multiple Disease Prediction System",
             description: "A Multiple Disease Prediction System is a MERN + ML full-stack project that predicts diseases like heart disease and diabetes using machine learning models on user health data.",
             image: "/diseasePred.png",
             tech: ["React.js", "Node.js", "Express.js", "MongoDB", "Tailwind CSS", "Machine Learning", "Cloudinary"],
             github: "https://github.com/Gaurang-Khator",
+        },
+        {
+            id: 5,
+            title: "Muziic -- (Ongoing)",
+            description: "Muziic is a collaborative music streaming app where users vote on songs in real-time to create a shared listening experience.",
+            image: "/music.png",
+            tech: ["Next.js", "Tailwind CSS", "PostgreSQL", "Sahdcn-UI", "Prisma"],
+            github: "https://github.com/Gaurang-Khator/muziic",
+            // live: "https://example.com"
         },
        
     ];

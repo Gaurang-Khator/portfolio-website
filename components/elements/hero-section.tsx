@@ -15,7 +15,7 @@ const HeroSection = () => {
                     <h1 className="text-base md:text-lg font-bold text-center mt-4 text-white">GAURANG KHATOR</h1>
                     <p className="text-gray-400 text-xs md:text-sm text-center" >Ahmedabad, Gujarat, India.</p>
                     <Card className="bg-zinc-700 mt-4 border-none p-2">
-                        <CardDescription className="text-gray-400 flex justify-center align-items-center text-xs md:text-sm">Software Engineer | AWS Certified | Full Stack Developer</CardDescription>
+                        <CardDescription className="text-gray-400 flex justify-center align-items-center text-xs md:text-sm">Software Engineer | AWS & Oracle Certified | Full Stack Developer</CardDescription>
                     </Card>
                     <Separator className="my-4 h-px bg-gray-600" />
                     <div className="flex flex-row m-2 gap-3 md:gap-4 align-items-center justify-center">

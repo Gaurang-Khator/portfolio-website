@@ -17,7 +17,7 @@ const Education = () => {
             duration: "2022 - 2026",
             details: [
                 "CGPA: 8.84/10",
-                "Relevant Coursework: Data Structures, Algorithms, Web Development, Database Systems, Cloud Computing",
+                "Relevant Coursework: Data Structures & Algorithms, Object-Oriented Programming, Database Management Systems, Computer Networks, Operating Systems",
             ]
         },
         {
@@ -26,7 +26,6 @@ const Education = () => {
             duration: "2021 - 2022",
             details: [
                 "Percentage: 86.4%",
-                "Subjects: Physics, Chemistry, Mathematics, Computer Science"
             ]
         },
         {
