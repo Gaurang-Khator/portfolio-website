@@ -18,6 +18,15 @@ const ProjectsPage = () => {
     const projectsData: Project[] = [
         {
             id: 1,
+            title: "CashTrail",
+            description: "A cloud-native, serverless finance management SaaS built with Next.js, AWS Lambda, DynamoDB and Clerk authentication.",
+            image: "/cashtrail.png",
+            tech: ["Next.js", "TypeScript", "AWS", "DynamoDB", "AWS Lambda", "API Gateway", "Clerk", "Shadcn-UI", "Tailwind CSS", "Vercel", "Postman"],
+            github: "https://github.com/Gaurang-Khator/cashtrail",
+            // live: "https://example.com"
+        },
+        {
+            id: 2,
             title: "S3-Sync",
             description: "A next-generation AWS S3 web file manager with authentication and upload, download and preview capabilities.",
             image: "/s3-sync.png",
@@ -26,16 +35,16 @@ const ProjectsPage = () => {
             // live: "https://example.com"
         },
         {
-            id: 2,
+            id: 3,
             title: "Coding Contest Tracker",
             description: "Coding Contest Tracker is a web-based application that helps competitive programmers stay up-to-date with upcoming, ongoing, and completed contests across multiple platforms such as Codeforces, LeetCode, and CodeChef — all in one dashboard.",
             image: "/coding-contest.png",
-            tech: ["Next.js", "Tailwind CSS", "Shadcn-UI", "MongoDB"],
+            tech: ["Next.js", "Tailwind CSS", "Shadcn-UI", "MongoDB", "Vercel"],
             github: "https://github.com/Gaurang-Khator/Coding-Contest-Tracker",
             live: "https://coding-contest-tracker-eight.vercel.app/"
         },
         {
-            id: 3,
+            id: 4,
             title: "CodeNexus",
             description: "CodeNexus is a full-stack EdTech platform that enables instructors to create and manage courses while allowing students to explore and purchase them. It features secure payment handling, cloud media uploads, and a fully responsive frontend.",
             image: "/codenexus.png",
@@ -44,7 +53,7 @@ const ProjectsPage = () => {
             // live: "https://example.com"
         },
         {
-            id: 4,
+            id: 5,
             title: "Multiple Disease Prediction System",
             description: "A Multiple Disease Prediction System is a MERN + ML full-stack project that predicts diseases like heart disease and diabetes using machine learning models on user health data.",
             image: "/diseasePred.png",
@@ -52,7 +61,7 @@ const ProjectsPage = () => {
             github: "https://github.com/Gaurang-Khator",
         },
         {
-            id: 5,
+            id: 6,
             title: "Muziic -- (Ongoing)",
             description: "Muziic is a collaborative music streaming app where users vote on songs in real-time to create a shared listening experience.",
             image: "/music.png",
@@ -74,7 +83,7 @@ const ProjectsPage = () => {
                     {projectsData.map((project) => (
                         <div 
                             key={project.id}
-                            className="bg-linear-to-br from-zinc-700/40 to-zinc-900/40 border border-zinc-600/50 hover:border-blue-500/50 rounded-lg overflow-hidden transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/10 group flex flex-col"
+                            className="bg-linear-to-br from-zinc-700/40 to-zinc-900/40 border border-zinc-600/50 hover:border-blue-500/50 rounded-lg overflow-hidden transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/10 group flex flex-col active:border-blue-500/50 active:shadow-lg active:shadow-blue-500/10"
                         >
                             <div className="relative h-24 md:h-32 w-full overflow-hidden bg-zinc-700">
                                 <Image
@@ -90,7 +99,7 @@ const ProjectsPage = () => {
                                     {project.title}
                                 </h3>
 
-                                <p className="text-gray-300 text-xs md:text-sm leading-relaxed line-clamp-4 mb-1 md:mb-2">
+                                <p className="text-gray-300 text-xs md:text-sm leading-relaxed line-clamp-4 mb-2 md:mb-4">
                                     {project.description}
                                 </p>
 
@@ -113,7 +122,7 @@ const ProjectsPage = () => {
                                             asChild
                                         >
                                             <a href={project.github} target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-1">
-                                                <Github size={10} /> Code
+                                                <Github size={10} /> GitHub
                                             </a>
                                         </Button>
                                     )}

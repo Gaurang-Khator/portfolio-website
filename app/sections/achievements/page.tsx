@@ -21,13 +21,13 @@ const Achievements = () => {
             date: "October 2025"
         },
         {
-            title: "LeetCode - Peak Rating 1726",
-            description: "Achieved peak rating of 1686 on LeetCode, demonstrating strong problem-solving skills in data structures and algorithms.",
+            title: "LeetCode - Peak Rating 1770",
+            description: "Achieved peak rating of 1770 on LeetCode, demonstrating strong problem-solving skills in data structures and algorithms.",
             date: "Present"
         },
         {
             title: "Codeforces - Rating 1013",
-            description: "Maintained a consistent rating of 1012 on Codeforces, participating actively in competitive programming contests.",
+            description: "Maintained a consistent rating of 1013 on Codeforces, participating actively in competitive programming contests.",
             date: "Present"
         },
         {
@@ -51,7 +51,10 @@ const Achievements = () => {
                 </div>
                 <CardContent className="text-white text-xs md:text-md overflow-y-auto custom-scrollbar space-y-4 md:space-y-4 px-2 md:px-4">
                     {achievementsData.map((achievement, index) => (
-                        <div key={index} className="bg-linear-to-br from-zinc-700/40 to-zinc-900/40 border border-zinc-600/50 hover:border-blue-500/50 rounded-lg p-3 md:p-4 transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/10">
+                        <div 
+                            key={index} 
+                            className="bg-linear-to-br from-zinc-700/40 to-zinc-900/40 border border-zinc-600/50 hover:border-blue-500/50 active:border-blue-500/50 rounded-lg p-3 md:p-4 transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/10 active:shadow-lg active:shadow-blue-500/10"
+                        >
                             <div className="flex items-start gap-3">
                                 <Award className="text-yellow-400 shrink-0 mt-1.5" size={18} />
                                 <div className="flex-1 min-w-0">

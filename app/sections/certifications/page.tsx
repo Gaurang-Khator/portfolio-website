@@ -69,7 +69,13 @@ const Certifications = () => {
                 <CardContent className="text-white text-xs md:text-md overflow-y-auto custom-scrollbar px-2 md:px-4 mb-4">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-4">
                         {certificationsData.map((cert, index) => (
-                            <div key={index} className="bg-linear-to-br from-zinc-700/40 to-zinc-900/40 border border-zinc-600/50 hover:border-blue-500/50 rounded-lg p-3 md:p-4 transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/10">
+                            <a 
+                                key={index} 
+                                href={cert.link} 
+                                target="_blank" 
+                                rel="noopener noreferrer"
+                                className="bg-linear-to-br from-zinc-700/40 to-zinc-900/40 border border-zinc-600/50 hover:border-blue-500/50 rounded-lg p-3 md:p-4 transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/10 cursor-pointer block active:border-blue-500/50 active:shadow-lg active:shadow-blue-500/10"
+                            >
                                 <div className="flex items-start gap-2 md:gap-3 justify-between">
                                     <div className="flex items-start gap-2 md:gap-3 flex-1 min-w-0">
                                         <CheckCircle className="text-blue-400 shrink-0 mt-0.5 md:mt-1" size={18} />
@@ -87,21 +93,15 @@ const Certifications = () => {
                                     {cert.link && (
                                         <Tooltip>
                                             <TooltipTrigger asChild>
-                                                <Button 
-                                                    size="sm"
-                                                    className="bg-green-600 hover:bg-green-700 text-white p-1 h-7 w-7 flex items-center justify-center shrink-0 ml-2"
-                                                    asChild
-                                                >
-                                                    <a href={cert.link} target="_blank" rel="noopener noreferrer">
-                                                        <ExternalLink size={16} />
-                                                    </a>
-                                                </Button>
+                                                <div className="bg-green-600 hover:bg-green-700 text-white p-1 h-7 w-7 flex items-center justify-center shrink-0 ml-2 rounded">
+                                                    <ExternalLink size={16} />
+                                                </div>
                                             </TooltipTrigger>
                                             <TooltipContent>View Credential</TooltipContent>
                                         </Tooltip>
                                     )}
                                 </div>
-                            </div>
+                            </a>
                         ))}
                     </div>
                 </CardContent>

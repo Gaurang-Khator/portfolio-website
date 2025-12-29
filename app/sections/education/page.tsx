@@ -47,7 +47,9 @@ const Education = () => {
             </div>
             <CardContent className="text-white overflow-y-auto custom-scrollbar space-y-4 px-2 md:px-4 mb-4">
                 {educationData.map((edu, index) => (
-                    <div key={index} className="group relative bg-linear-to-br from-zinc-700/40 to-zinc-900/40 border border-zinc-600/50 hover:border-blue-500/50 rounded-xl p-4 md:p-5 transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/10">
+                    <div 
+                    key={index} 
+                    className="group relative bg-linear-to-br from-zinc-700/40 to-zinc-900/40 border border-zinc-600/50 hover:border-blue-500/50 rounded-xl p-4 md:p-5 transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/10 active:border-blue-500/50 active:shadow-lg active:shadow-blue-500/10">
                 
                         <div className="flex items-start gap-3 mb-3">
                             <BookOpen className="text-blue-400 shrink-0 mt-1" size={20} />
