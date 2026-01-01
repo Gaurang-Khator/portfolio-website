@@ -21,8 +21,8 @@ const Achievements = () => {
             date: "October 2025"
         },
         {
-            title: "LeetCode - Peak Rating 1770",
-            description: "Achieved peak rating of 1770 on LeetCode, demonstrating strong problem-solving skills in data structures and algorithms.",
+            title: "LeetCode - Peak Rating 1801",
+            description: "Achieved peak rating of 1801 on LeetCode, demonstrating strong problem-solving skills in data structures and algorithms.",
             date: "Present"
         },
         {
