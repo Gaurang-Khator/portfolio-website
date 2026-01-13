@@ -23,7 +23,7 @@ const ProjectsPage = () => {
             image: "/cashtrail.png",
             tech: ["Next.js", "TypeScript", "AWS", "DynamoDB", "AWS Lambda", "API Gateway", "Clerk", "Shadcn-UI", "Tailwind CSS", "Vercel", "Postman"],
             github: "https://github.com/Gaurang-Khator/cashtrail",
-            // live: "https://example.com"
+            live: "https://cashtrail-app.vercel.app/"
         },
         {
             id: 2,
