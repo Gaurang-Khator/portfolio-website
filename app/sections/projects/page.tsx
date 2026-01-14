@@ -60,15 +60,15 @@ const ProjectsPage = () => {
             tech: ["React.js", "Node.js", "Express.js", "MongoDB", "Tailwind CSS", "Machine Learning", "Cloudinary"],
             github: "https://github.com/Gaurang-Khator",
         },
-        {
-            id: 6,
-            title: "Muziic -- (Ongoing)",
-            description: "Muziic is a collaborative music streaming app where users vote on songs in real-time to create a shared listening experience.",
-            image: "/music.png",
-            tech: ["Next.js", "Tailwind CSS", "PostgreSQL", "Sahdcn-UI", "Prisma"],
-            github: "https://github.com/Gaurang-Khator/muziic",
+        // {
+            // id: 6,
+            // title: "Muziic -- (Ongoing)",
+            // description: "Muziic is a collaborative music streaming app where users vote on songs in real-time to create a shared listening experience.",
+            // image: "/music.png",
+            // tech: ["Next.js", "Tailwind CSS", "PostgreSQL", "Sahdcn-UI", "Prisma"],
+            // github: "https://github.com/Gaurang-Khator/muziic",
             // live: "https://example.com"
-        },
+        // },
        
     ];
 

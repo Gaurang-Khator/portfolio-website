@@ -18,11 +18,11 @@ const Skills = () => {
         },
         {
             category: "BACKEND DEVELOPMENT",
-            skills: ["Node.js", "Express.js", "REST APIs"]
+            skills: ["Node.js", "Express.js", "AWS Lambda", "REST APIs"]
         },
         {
             category: "DATABASES",
-            skills: ["MySQL", "PostgreSQL", "MongoDB"]
+            skills: ["MySQL", "MongoDB", "DynamoDB" ]
         },
         {
             category: "TOOLS & TECHNOLOGIES",
