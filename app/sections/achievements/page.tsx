@@ -21,10 +21,11 @@ const Achievements = () => {
             date: "October 2025"
         },
         {
-            title: "LeetCode - Peak Rating 1801",
-            description: "Achieved peak rating of 1801 on LeetCode, demonstrating strong problem-solving skills in data structures and algorithms.",
+            title: "LeetCode Knight Badge (Rating 1851)",
+            description: "Earned the Knight badge on LeetCode with a rating of 1851, placing in the top 5.91% globally and demonstrating strong problem-solving skills in data structures and algorithms.",
             date: "Present"
         },
+
         {
             title: "Codeforces - Rating 1013",
             description: "Maintained a consistent rating of 1013 on Codeforces, participating actively in competitive programming contests.",

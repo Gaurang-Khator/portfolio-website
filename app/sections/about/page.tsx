@@ -20,12 +20,11 @@ const About = () => {
                 <p className="text-gray-300 leading-relaxed">Professionally, I've led multiple team-based technical projects as the <span className="text-blue-400 font-semibold">Technical Team Lead at the E-Commerce Club</span>, driving innovation and collaboration through real-world product development. I was recognized as a <span className="text-blue-400 font-semibold">Hacktoberfest 2025 Super Contributor</span> and achieved <span className="text-blue-400 font-semibold">runner-up position</span> in the <span className="text-blue-400 font-semibold">Bugoff Hackathon 2023</span>, demonstrating strong leadership and the ability to deliver results under pressure.
                 </p>
 
-                <p className="text-gray-300 leading-relaxed">Beyond development, I'm passionate about competitive programming, with a <span className="text-blue-400 font-semibold">LeetCode rating of 1801</span> (Top <span className="text-blue-400 font-semibold">7.58% globally</span>) and a <span className="text-blue-400 font-semibold">Codeforces rating of 1013</span>. Having <span className="text-blue-400 font-semibold">solved 500+ problems</span> across multiple platforms, I continually strengthen my skills in algorithms, data structures, and logical problem-solving.
+                <p className="text-gray-300 leading-relaxed">Beyond development, I'm passionate about competitive programming, holding the{" "}<span className="text-blue-400 font-semibold">Knight badge on LeetCode</span>{" "}with a{" "}<span className="text-blue-400 font-semibold">1851 rating</span>{" "}(Top{" "}<span className="text-blue-400 font-semibold">5.91% globally</span>) and a{" "}<span className="text-blue-400 font-semibold">Codeforces rating of 1013</span>. Having{" "}<span className="text-blue-400 font-semibold">solved 550+ problems</span>{" "} across multiple platforms, I continually strengthen my skills in Algorithms, Data Structures, and logical problem-solving.
                 </p>
+
                 <p className="text-gray-300 leading-relaxed">Outside of tech, I enjoy playing cricket and badminton, as well as exploring new places through travelling, which help me stay active, focused, and inspired.
                 </p>
-                {/* <p className="text-gray-300 leading-relaxed">My goal is to grow as a <span className="text-blue-400 font-semibold">Software Engineer</span> by embracing new challenges, learning from diverse experiences, and contributing to impactful, scalable technology solutions that drive innovation.
-                </p> */}
 
             </CardContent>
         </Card>
