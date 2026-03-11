@@ -18,6 +18,15 @@ const ProjectsPage = () => {
     const projectsData: Project[] = [
         {
             id: 1,
+            title: "ArogyaAI",
+            description: "A full-stack web application that allows users to input their symptoms via text or voice in multiple languages and receive an AI-generated preliminary assessment.",
+            image: "/arogyaai.png",
+            tech: ["Next.js", "TypeScript", "Node.js", "Express.js", "AWS Lambda", "MongoDB", "Sarvam AI", "Gemini", "Clerk", "Shadcn-UI", "Tailwind CSS", "Vercel", "Render"],
+            github: "https://github.com/Gaurang-Khator/ArogyaAI",
+            live: "https://arogya-ai-web.vercel.app/"
+        },
+        {
+            id: 2,
             title: "CashTrail",
             description: "A cloud-native, serverless finance management SaaS built with Next.js, AWS Lambda, DynamoDB and Clerk authentication.",
             image: "/cashtrail.png",
@@ -26,7 +35,7 @@ const ProjectsPage = () => {
             live: "https://cashtrail-app.vercel.app/"
         },
         {
-            id: 2,
+            id: 3,
             title: "S3-Sync",
             description: "A next-generation AWS S3 web file manager with authentication and upload, download and preview capabilities.",
             image: "/s3-sync.png",
@@ -35,7 +44,7 @@ const ProjectsPage = () => {
             // live: "https://example.com"
         },
         {
-            id: 3,
+            id: 4,
             title: "Coding Contest Tracker",
             description: "Coding Contest Tracker is a web-based application that helps competitive programmers stay up-to-date with upcoming, ongoing, and completed contests across multiple platforms such as Codeforces, LeetCode, and CodeChef — all in one dashboard.",
             image: "/coding-contest.png",
@@ -44,7 +53,7 @@ const ProjectsPage = () => {
             live: "https://coding-contest-tracker-eight.vercel.app/"
         },
         {
-            id: 4,
+            id: 5,
             title: "CodeNexus",
             description: "CodeNexus is a full-stack EdTech platform that enables instructors to create and manage courses while allowing students to explore and purchase them. It features secure payment handling, cloud media uploads, and a fully responsive frontend.",
             image: "/codenexus.png",
@@ -53,7 +62,7 @@ const ProjectsPage = () => {
             // live: "https://example.com"
         },
         {
-            id: 5,
+            id: 6,
             title: "Multiple Disease Prediction System",
             description: "A Multiple Disease Prediction System is a MERN + ML full-stack project that predicts diseases like heart disease and diabetes using machine learning models on user health data.",
             image: "/diseasePred.png",
