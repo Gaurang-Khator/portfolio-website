@@ -1,10 +1,11 @@
 'use client';
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import HeroSection from "@/components/elements/hero-section";
 import NavBar from "@/components/elements/NavBar";
+import IntroScreen from "@/components/elements/intro-screen";
 
 import About from "./sections/about/page";
 import Skills from "./sections/skills/page";
@@ -32,6 +33,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   const [activeSection, setActiveSection] = useState('about');
+  const [showIntro, setShowIntro] = useState(true);
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
 
   const renderSection = () => {
     switch (activeSection) {
@@ -54,6 +61,10 @@ export default function RootLayout({
     }
   };
 
+  const handleIntroComplete = () => {
+    setShowIntro(false);
+  };
+
   return (
     <html lang="en">
       <head>
@@ -64,18 +75,21 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <div className="flex flex-col md:flex-row min-h-screen bg-zinc-900 text-white">
-          <aside className="w-full md:w-[460px] p-4 md:p-6 bg-zinc-900 md:shrink-0 md:h-screen md:sticky md:top-0">
-            <HeroSection />
-          </aside>
-          <main className="flex-1 flex flex-col px-4 md:px-10 py-6 md:py-8 pb-8 md:pb-8">
-            <NavBar activeSection={activeSection} onNavigate={setActiveSection} />
-            <section className="mt-6 md:mt-10">
-              {renderSection()}
-            </section>
-          </main>
-          <Analytics />
-        </div>
+        {isClient && showIntro && <IntroScreen onComplete={handleIntroComplete} />}
+        {isClient && !showIntro && (
+          <div className="flex flex-col md:flex-row min-h-screen bg-zinc-900 text-white">
+            <aside className="w-full md:w-[460px] p-4 md:p-6 bg-zinc-900 md:shrink-0 md:h-screen md:sticky md:top-0">
+              <HeroSection />
+            </aside>
+            <main className="flex-1 flex flex-col px-4 md:px-10 py-6 md:py-8 pb-8 md:pb-8">
+              <NavBar activeSection={activeSection} onNavigate={setActiveSection} />
+              <section className="mt-6 md:mt-10">
+                {renderSection()}
+              </section>
+            </main>
+            <Analytics />
+          </div>
+        )}
       </body>
     </html>
   );
